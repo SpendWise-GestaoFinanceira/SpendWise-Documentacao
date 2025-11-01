@@ -1,10 +1,10 @@
-# User Stories - SpendWise
+﻿# User Stories - SpendWise
 
 > **Visão**: App de finanças pessoais para registrar receitas/despesas, controlar orçamento mensal, fechar meses e analisar relatórios.  
 > **Personas**: Usuário final (pessoa física).  
 > **Prioridade (MoSCoW)**: Must / Should / Could.
 
-## 📋 **Sumário**
+## **Sumário**
 
 - [E1 — Autenticação & Sessão](#e1--autenticação--sessão)
 - [E2 — Categorias](#e2--categorias)
@@ -168,7 +168,7 @@ E as transações do mês ficam bloqueadas para edição/exclusão
 
 ---
 
-## 📊 **E6 — Relatórios**
+## **E6 — Relatórios**
 
 **Objetivo**: visão analítica por categoria e período.  
 **Valor**: decisões informadas sobre gastos.  
@@ -190,7 +190,7 @@ E as transações do mês ficam bloqueadas para edição/exclusão
 
 ---
 
-## 🎯 **E7 — Metas Financeiras**
+## **E7 — Metas Financeiras**
 
 **Objetivo**: definir objetivos (valor-alvo e prazo) e acompanhar progresso.  
 **Valor**: incentivo ao planejamento financeiro.  
@@ -245,7 +245,7 @@ E as transações do mês ficam bloqueadas para edição/exclusão
 
 ---
 
-## 🚀 **E10 — Infra/DevEx**
+## **E10 — Infra/DevEx**
 
 **Objetivo**: base de execução, testes e entrega contínua.  
 **Valor**: produtividade e estabilidade do time.  
@@ -273,7 +273,7 @@ E as transações do mês ficam bloqueadas para edição/exclusão
 
 ---
 
-## 📋 **Apêndice**
+## **Apêndice**
 
 ### **Definition of Ready (DoR)**
 História com benefício claro, AC definidos, sem bloqueios e UI rascunhada.
@@ -286,7 +286,7 @@ Acessibilidade básica; TTFB razoável em listas; logs estruturados; rate limit 
 
 ---
 
-## 📊 **Status de Implementação**
+## **Status de Implementação**
 
 ### **✅ Implementado (Must)**
 - SW-001: Cadastrar conta ✅
@@ -335,7 +335,7 @@ Acessibilidade básica; TTFB razoável em listas; logs estruturados; rate limit 
 
 ---
 
-## 🎯 **Métricas de Progresso**
+## **Métricas de Progresso**
 
 - **Total de Stories**: 42
 - **Implementadas**: 22 (52%)
@@ -343,3 +343,4 @@ Acessibilidade básica; TTFB razoável em listas; logs estruturados; rate limit 
 - **Planejadas**: 12 (29%)
 
 **Status Geral**: 🟢 **Em Andamento** - Funcionalidades essenciais implementadas, foco em melhorias e funcionalidades avançadas.
+

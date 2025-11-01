@@ -1,6 +1,6 @@
 # Arquitetura do Sistema
 
-## 🏗️ **Visão Geral da Arquitetura**
+## **Visão Geral da Arquitetura**
 
 O SpendWise implementa uma arquitetura moderna baseada em **Clean Architecture**, **Domain-Driven Design (DDD)** e **CQRS**, garantindo separação clara de responsabilidades e alta testabilidade.
 
@@ -60,7 +60,7 @@ graph TB
 - Dependências são injetadas
 - Mocks podem ser facilmente criados
 
-## 🎯 **Domain-Driven Design (DDD)**
+## **Domain-Driven Design (DDD)**
 
 ### **Bounded Contexts**
 
@@ -101,7 +101,7 @@ graph LR
 - **OrcamentoService**: Cálculos de orçamento
 - **RelatorioService**: Geração de relatórios
 
-## ⚡ **CQRS (Command Query Responsibility Segregation)**
+## **CQRS (Command Query Responsibility Segregation)**
 
 ### **Commands (Escrita)**
 ```csharp
@@ -138,7 +138,7 @@ public class CreateTransacaoCommandHandler : IRequestHandler<CreateTransacaoComm
 }
 ```
 
-## 🏛️ **Estrutura de Camadas**
+## **Estrutura de Camadas**
 
 ### **Domain Layer**
 ```
@@ -182,7 +182,7 @@ SpendWise.API/
 └── Program.cs         # Configuração da aplicação
 ```
 
-## 🔄 **Fluxo de Dados**
+## **Fluxo de Dados**
 
 ### **Criação de Transação**
 
@@ -268,7 +268,7 @@ public async Task CreateTransacao_ShouldReturnSuccess()
 }
 ```
 
-## 🔒 **Segurança**
+## **Segurança**
 
 ### **Autenticação e Autorização**
 - **JWT Tokens** para autenticação
@@ -282,7 +282,7 @@ public async Task CreateTransacao_ShouldReturnSuccess()
 - **Sanitização** de inputs
 - **Rate Limiting** para APIs
 
-## 📊 **Performance**
+## **Performance**
 
 ### **Otimizações Implementadas**
 - **Async/Await** em todas as operações I/O
@@ -296,7 +296,7 @@ public async Task CreateTransacao_ShouldReturnSuccess()
 - **Metrics** de performance
 - **Error Tracking** centralizado
 
-## 🚀 **Escalabilidade**
+## **Escalabilidade**
 
 ### **Horizontal Scaling**
 - **Stateless** design
@@ -310,7 +310,7 @@ public async Task CreateTransacao_ShouldReturnSuccess()
 - **Database** indexing
 - **Caching** strategies
 
-## 🔧 **Manutenibilidade**
+## **Manutenibilidade**
 
 ### **Code Quality**
 - **SOLID** principles
@@ -325,3 +325,5 @@ public async Task CreateTransacao_ShouldReturnSuccess()
 - **Readable** structure
 
 Esta arquitetura garante que o sistema seja **robusto**, **escalável**, **testável** e **maintível**, seguindo as melhores práticas da indústria de software.
+
+

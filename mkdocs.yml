@@ -75,27 +75,6 @@ theme:
 plugins:
   - search:
       lang: pt
-  - git-revision-date-localized:
-      enable_creation_date: true
-  - git-committers:
-      repository: MateusOrlando/SpendWise-Docs
-      branch: main
-  - minify:
-      minify_html: true
-  - awesome-pages
-  - mkdocs-jupyter
-  - mkdocstrings:
-      handlers:
-        python:
-          paths: [../SpendWise/backend/src]
-      default_handler: python
-      handlers:
-        python:
-          options:
-            docstring_style: google
-            show_source: true
-            show_root_heading: true
-            show_root_toc: true
 
 # Markdown extensions
 markdown_extensions:
@@ -156,15 +135,20 @@ nav:
   - Backend:
     - Introdução: backend/index.md
     - Clean Architecture: backend/clean-architecture.md
-    - Domain Layer: backend/domain.md
-    - Application Layer: backend/application.md
-    - Infrastructure Layer: backend/infrastructure.md
-    - API Layer: backend/api.md
+    - Camadas:
+      - Domain Layer: backend/domain.md
+      - Application Layer: backend/application.md
+      - Infrastructure Layer: backend/infrastructure.md
+      - API Layer: backend/api.md
+    - Product Backlog: backend/backlog.md
+    - Testes: backend/testes.md
   - Frontend:
     - Introdução: frontend/index.md
-    - Next.js Setup: frontend/nextjs.md
-    - Componentes: frontend/components.md
+    - Arquitetura: frontend/arquitetura.md
+    - Componentes: frontend/componentes.md
     - Integração API: frontend/api-integration.md
+    - Testes: frontend/testes.md
+    - Product Backlog: frontend/backlog.md
   - Docker & DevOps:
     - Docker: docker/index.md
     - Desenvolvimento: docker/development.md
@@ -177,9 +161,10 @@ nav:
     - Transações: api/transactions.md
     - Relatórios: api/reports.md
   - Diagramas:
+    - Visão Geral: diagrams/index.md
+    - MER (Modelo Conceitual): diagrams/MER-SpendWise.md
     - Modelo de Dados: diagrams/data-model.md
     - Arquitetura: diagrams/architecture.md
-    - Fluxos: diagrams/flows.md
   - Guias:
     - Setup Local: guides/setup.md
     - Contribuição: guides/contributing.md

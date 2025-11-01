@@ -1,17 +1,17 @@
-# API - Autenticação
+﻿# API - Autenticação
 
 ## 🔐 **Visão Geral**
 
 A API de autenticação do SpendWise utiliza JWT (JSON Web Tokens) para autenticação stateless, garantindo segurança e escalabilidade.
 
-## 🚀 **Base URL**
+## **Base URL**
 
 ```
 Development: http://localhost:5000/api
 Production: https://api.spendwise.com/api
 ```
 
-## 📋 **Endpoints**
+## **Endpoints**
 
 ### **POST /auth/login**
 
@@ -381,7 +381,7 @@ curl -X GET http://localhost:5000/api/usuarios/profile \
 }
 ```
 
-## 📚 **Próximos Passos**
+## **Próximos Passos**
 
 1. **[Usuários](users.md)** - Gestão de usuários
 2. **[Categorias](categories.md)** - Gestão de categorias
@@ -398,3 +398,4 @@ Para problemas ou dúvidas:
 2. Consultar documentação da API
 3. Abrir issue no repositório
 4. Contatar equipe de desenvolvimento
+

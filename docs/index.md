@@ -1,4 +1,4 @@
-# SpendWise - Sistema de Finanças Pessoais
+﻿# SpendWise - Sistema de Finanças Pessoais
 
 <div class="grid cards" markdown>
 
@@ -38,11 +38,11 @@
 
 ---
 
-## 🎯 **Sobre o Projeto**
+## **Sobre o Projeto**
 
 O **SpendWise** é uma evolução moderna de um projeto Java simples, transformado em uma aplicação web completa utilizando as melhores práticas de desenvolvimento de software. O projeto demonstra a aplicação de conceitos avançados como Clean Architecture, Domain-Driven Design (DDD), CQRS e padrões modernos de desenvolvimento.
 
-### **📊 Transformação Realizada**
+### **Transformação Realizada**
 
 | Aspecto | Projeto Original (Java) | SpendWise (Moderno) |
 |---------|------------------------|---------------------|
@@ -56,7 +56,7 @@ O **SpendWise** é uma evolução moderna de um projeto Java simples, transforma
 
 ---
 
-## 🚀 **Quick Start**
+## **Quick Start**
 
 ### **Desenvolvimento Local**
 
@@ -90,7 +90,7 @@ cp .env.example .env
 
 ---
 
-## 🏗️ **Tecnologias Utilizadas**
+## **Tecnologias Utilizadas**
 
 ### **Backend**
 - **ASP.NET Core 8** - Framework web moderno
@@ -117,7 +117,7 @@ cp .env.example .env
 
 ---
 
-## 📚 **Documentação**
+## **Documentação**
 
 Esta documentação está organizada em seções que cobrem todos os aspectos do projeto:
 
@@ -130,7 +130,7 @@ Esta documentação está organizada em seções que cobrem todos os aspectos do
 
 ---
 
-## 🤝 **Contribuição**
+## **Contribuição**
 
 Este projeto foi desenvolvido como parte do curso de **Técnicas de Programação em Plataformas Emergentes** da **UNB**.
 
@@ -148,7 +148,7 @@ Este projeto foi desenvolvido como parte do curso de **Técnicas de Programaçã
 
 ---
 
-## 📄 **Licença**
+## **Licença**
 
 Este projeto é desenvolvido para fins acadêmicos como parte do curso de Técnicas de Programação em Plataformas Emergentes da Universidade de Brasília.
 
@@ -181,3 +181,4 @@ Este projeto é desenvolvido para fins acadêmicos como parte do curso de Técni
     [:octicons-arrow-right-24: Issues](https://github.com/MateusOrlando/SpendWise/issues)
 
 </div>
+

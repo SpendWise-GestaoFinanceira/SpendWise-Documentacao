@@ -1,12 +1,12 @@
-# Regras de Negócio
+﻿# Regras de Negócio
 
-## 📋 **Visão Geral**
+## **Visão Geral**
 
 Este documento detalha todas as regras de negócio implementadas no SpendWise, servindo como especificação para desenvolvimento e validação dos testes.
 
 ---
 
-## 🎯 **Regra 1: Limite Mensal por Categoria**
+## **Regra 1: Limite Mensal por Categoria**
 
 ### **Descrição**
 Controle de gastos por categoria com limite mensal acumulativo e sistema de alertas.
@@ -106,7 +106,7 @@ Cenário: Proteção de mês fechado
 
 ---
 
-## 🎯 **Regra 4: Prioridade Essencial x Supérfluo**
+## **Regra 4: Prioridade Essencial x Supérfluo**
 
 ### **Descrição**
 Sistema inteligente de priorização que bloqueia gastos supérfluos quando há comprometimento financeiro.
@@ -134,7 +134,7 @@ Cenário: Bloqueio de supérfluo por comprometimento essencial
 
 ---
 
-## 📊 **Regra 5: Relatórios e Alertas**
+## **Regra 5: Relatórios e Alertas**
 
 ### **Descrição**
 Sistema proativo de monitoramento e reporting para educação financeira.
@@ -152,7 +152,7 @@ Sistema proativo de monitoramento e reporting para educação financeira.
 
 ---
 
-## 🎯 **Regra 6: Metas Financeiras**
+## **Regra 6: Metas Financeiras**
 
 ### **Descrição**
 Sistema de definição e acompanhamento de objetivos financeiros com projeções inteligentes.
@@ -265,7 +265,7 @@ public void Categoria_UltrapassouLimite_ShouldReturnTrue()
 
 ---
 
-## 📈 **Métricas de Qualidade**
+## **Métricas de Qualidade**
 
 ### **Cobertura de Testes**
 - **Regras de Negócio**: 100% cobertas
@@ -278,3 +278,4 @@ public void Categoria_UltrapassouLimite_ShouldReturnTrue()
 - **Testes de Performance**: Validação de regras complexas
 
 Esta documentação garante que todas as regras de negócio sejam implementadas corretamente e testadas adequadamente, mantendo a integridade e consistência do sistema.
+

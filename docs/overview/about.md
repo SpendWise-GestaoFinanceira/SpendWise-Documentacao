@@ -1,10 +1,10 @@
 # Sobre o Projeto
 
-## 🎯 **Visão Geral**
+## **Visão Geral**
 
 O **SpendWise** é um sistema completo de gestão financeira pessoal desenvolvido como parte do curso de **Técnicas de Programação em Plataformas Emergentes** da Universidade de Brasília. O projeto demonstra a evolução de um sistema simples em Java para uma aplicação web moderna e robusta.
 
-## 📈 **Evolução do Projeto**
+## **Evolução do Projeto**
 
 ### **Projeto Original (Java)**
 O projeto começou como uma aplicação Java simples com foco didático em Programação Orientada a Objetos:
@@ -24,12 +24,12 @@ public class Usuario {
 ```
 
 **Características:**
-- ✅ POO básica (Classes, Herança, Polimorfismo)
-- ✅ Estrutura simples e didática
-- ❌ Sem persistência de dados
-- ❌ Interface apenas console
-- ❌ Sem testes automatizados
-- ❌ Sem validações robustas
+- POO básica (Classes, Herança, Polimorfismo)
+- Estrutura simples e didática
+- Sem persistência de dados
+- Interface apenas console
+- Sem testes automatizados
+- Sem validações robustas
 
 ### **SpendWise Moderno**
 Transformação completa para uma aplicação web moderna:
@@ -52,16 +52,16 @@ public class CreateTransacaoCommandHandler : IRequestHandler<CreateTransacaoComm
 ```
 
 **Características:**
-- ✅ Clean Architecture
-- ✅ Domain-Driven Design (DDD)
-- ✅ CQRS com MediatR
-- ✅ Testes automatizados (158 testes)
-- ✅ Validações robustas
-- ✅ API REST completa
-- ✅ Frontend moderno
-- ✅ Docker e CI/CD
+- Clean Architecture
+- Domain-Driven Design (DDD)
+- CQRS com MediatR
+- Testes automatizados (158 testes)
+- Validações robustas
+- API REST completa
+- Frontend moderno
+- Docker e CI/CD
 
-## 🏛️ **Arquitetura Implementada**
+## **Arquitetura Implementada**
 
 ### **Clean Architecture**
 O projeto segue os princípios da Clean Architecture, com separação clara de responsabilidades:
@@ -111,7 +111,7 @@ SpendWise/
 - **Husky** para git hooks
 - **lint-staged** para commits limpos
 
-## 🚀 **Tecnologias Emergentes**
+## **Tecnologias Emergentes**
 
 ### **Backend (.NET 8)**
 - **ASP.NET Core 8** - Framework web mais recente
@@ -136,7 +136,7 @@ SpendWise/
 - **Nginx** - Reverse proxy
 - **PostgreSQL** - Banco de dados moderno
 
-## 📊 **Métricas do Projeto**
+## **Métricas do Projeto**
 
 ### **Código**
 - **Backend**: ~15.000 linhas de código
@@ -162,25 +162,25 @@ SpendWise/
 ## 🎓 **Objetivos Acadêmicos Alcançados**
 
 ### **Conceitos de Arquitetura**
-- ✅ Clean Architecture
-- ✅ Domain-Driven Design
-- ✅ CQRS e Event Sourcing
-- ✅ SOLID Principles
-- ✅ Design Patterns
+- Clean Architecture
+- Domain-Driven Design
+- CQRS e Event Sourcing
+- SOLID Principles
+- Design Patterns
 
 ### **Tecnologias Emergentes**
-- ✅ .NET 8 e ASP.NET Core
-- ✅ Next.js 14 e React
-- ✅ Docker e Containerização
-- ✅ CI/CD com GitHub Actions
-- ✅ PostgreSQL e EF Core
+- .NET 8 e ASP.NET Core
+- Next.js 14 e React
+- Docker e Containerização
+- CI/CD com GitHub Actions
+- PostgreSQL e EF Core
 
 ### **Práticas Modernas**
-- ✅ Test-Driven Development (TDD)
-- ✅ Code Quality e Linting
-- ✅ Git Workflow
-- ✅ Documentation as Code
-- ✅ DevOps e Deploy
+- Test-Driven Development (TDD)
+- Code Quality e Linting
+- Git Workflow
+- Documentation as Code
+- DevOps e Deploy
 
 ## 🔮 **Próximos Passos**
 
@@ -198,7 +198,7 @@ SpendWise/
 - [ ] Export/Import de dados
 - [ ] API mobile
 
-## 📚 **Aprendizados**
+## **Aprendizados**
 
 Este projeto demonstrou a evolução de um sistema simples para uma aplicação enterprise, aplicando:
 
@@ -210,3 +210,5 @@ Este projeto demonstrou a evolução de um sistema simples para uma aplicação 
 6. **Documentação** - Conhecimento compartilhado
 
 O resultado é um sistema robusto, escalável e maintível que serve como referência para desenvolvimento moderno de software.
+
+

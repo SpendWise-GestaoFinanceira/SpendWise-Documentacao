@@ -1,10 +1,10 @@
 # Tecnologias Utilizadas
 
-## 🏗️ **Stack Tecnológico**
+## **Stack Tecnológico**
 
 O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnologias disponíveis para desenvolvimento web.
 
-## 🔧 **Backend (.NET 8)**
+## **Backend (.NET 8)**
 
 ### **ASP.NET Core 8**
 - **Framework**: Web API moderna e performática
@@ -144,7 +144,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Versão**: 1.0
 - **Benefícios**: Testes de UI robustos
 
-## 📊 **Monitoramento & Observabilidade**
+## **Monitoramento & Observabilidade**
 
 ### **Serilog**
 - **Logging**: Logs estruturados
@@ -161,7 +161,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Características**: Correlação, análise
 - **Benefícios**: Troubleshooting eficiente
 
-## 🔒 **Segurança**
+## **Segurança**
 
 ### **JWT (JSON Web Tokens)**
 - **Autenticação**: Stateless authentication
@@ -183,7 +183,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Características**: Por IP, por usuário
 - **Benefícios**: Prevenção de abuso
 
-## 📈 **Performance**
+## **Performance**
 
 ### **Async/Await**
 - **Concorrência**: Operações não-bloqueantes
@@ -203,7 +203,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Características**: Edge locations
 - **Benefícios**: Performance global
 
-## 🛠️ **Ferramentas de Desenvolvimento**
+## **Ferramentas de Desenvolvimento**
 
 ### **Visual Studio Code**
 - **IDE**: Editor moderno
@@ -225,7 +225,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Características**: Auto-format, configuração
 - **Benefícios**: Legibilidade, padronização
 
-## 📚 **Bibliotecas de Apoio**
+## **Bibliotecas de Apoio**
 
 ### **Backend**
 - **FluentValidation**: Validações
@@ -247,7 +247,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **GitHub Actions**: CI/CD
 - **PostgreSQL**: Database
 
-## 🎯 **Critérios de Escolha**
+## **Critérios de Escolha**
 
 ### **Performance**
 - **Backend**: .NET 8 (alta performance)
@@ -269,7 +269,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Tests**: Cobertura alta
 - **Documentation**: Completa
 
-## 🚀 **Próximas Tecnologias**
+## **Próximas Tecnologias**
 
 ### **Planejadas**
 - **Redis**: Caching distribuído
@@ -285,3 +285,5 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Machine Learning**: Insights
 
 Esta stack tecnológica garante que o SpendWise seja uma aplicação moderna, escalável e maintível, seguindo as melhores práticas da indústria.
+
+
