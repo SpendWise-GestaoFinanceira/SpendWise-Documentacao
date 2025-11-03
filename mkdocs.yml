@@ -1,6 +1,9 @@
 site_name: SpendWise
 theme:
   name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.instant
     - navigation.tabs
@@ -14,7 +17,7 @@ theme:
       primary: emerald
       accent: sky
 extra_css:
-  - ./docs/assets/stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 nav:
   - Home: index.md
