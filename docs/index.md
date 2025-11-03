@@ -1,46 +1,52 @@
-﻿# SpendWise - Sistema de Finanças Pessoais
+# SpendWise
+
+## Sistema de Gestão de Finanças Pessoais
+
+Plataforma moderna e completa para controle financeiro pessoal, construída com Clean Architecture, DDD e as melhores práticas de desenvolvimento de software.
+
+---
 
 <div class="grid cards" markdown>
 
--   :material-currency-usd:{ .lg .middle } **Visão Geral**
+-   **Visão Geral**
 
     ---
 
     Sistema completo de gestão financeira pessoal com arquitetura moderna e tecnologias emergentes.
 
-    [:octicons-arrow-right-24: Visão Geral](overview/about.md)
+    [Ver mais →](overview/about.md)
 
--   :material-architecture:{ .lg .middle } **Arquitetura**
+-   **Arquitetura**
 
     ---
 
     Clean Architecture, CQRS, DDD e padrões modernos de desenvolvimento.
 
-    [:octicons-arrow-right-24: Arquitetura](overview/architecture.md)
+    [Ver mais →](overview/architecture.md)
 
--   :material-docker:{ .lg .middle } **Docker & DevOps**
+-   **Docker & DevOps**
 
     ---
 
     Containerização completa com Docker, CI/CD e deploy automatizado.
 
-    [:octicons-arrow-right-24: Docker](docker/index.md)
+    [Ver mais →](docker/index.md)
 
--   :material-api:{ .lg .middle } **API Reference**
+-   **API Reference**
 
     ---
 
     Documentação completa da API REST com exemplos e endpoints.
 
-    [:octicons-arrow-right-24: API](api/auth.md)
+    [Ver mais →](api/auth.md)
 
 </div>
 
 ---
 
-## **Sobre o Projeto**
+## Sobre o Projeto
 
-O **SpendWise** é uma evolução moderna de um projeto Java simples, transformado em uma aplicação web completa utilizando as melhores práticas de desenvolvimento de software. O projeto demonstra a aplicação de conceitos avançados como Clean Architecture, Domain-Driven Design (DDD), CQRS e padrões modernos de desenvolvimento.
+O SpendWise é uma evolução moderna de um projeto Java simples, transformado em uma aplicação web completa utilizando as melhores práticas de desenvolvimento de software. O projeto demonstra a aplicação de conceitos avançados como Clean Architecture, Domain-Driven Design (DDD), CQRS e padrões modernos de desenvolvimento.
 
 ### **Transformação Realizada**
 

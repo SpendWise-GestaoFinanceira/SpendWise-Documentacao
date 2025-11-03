@@ -11,30 +11,27 @@ edit_uri: edit/main/docs/
 # Configuration
 theme:
   name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: emerald
+      accent: sky
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: Mudar para modo escuro
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: emerald
+      accent: sky
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference
+        name: Mudar para modo claro
 
   features:
     - announce.dismiss
@@ -70,6 +67,12 @@ theme:
 
   logo: assets/logo.png
   favicon: assets/favicon.ico
+  
+  custom_dir: overrides
+
+# Extra CSS
+extra_css:
+  - assets/stylesheets/extra.css
 
 # Plugins
 plugins:
