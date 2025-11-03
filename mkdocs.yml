@@ -1,21 +1,22 @@
 site_name: SpendWise - Documentação Técnica
 site_description: Documentação completa do sistema de finanças pessoais SpendWise
 site_author: Mateus Orlando
-site_url: https://mateusorlando.github.io/SpendWise-Docs
+site_url: https://mateusorlando.github.io/SpendWise-Documentacao
 
-# Repository
-repo_name: MateusOrlando/SpendWise-Docs
-repo_url: https://github.com/MateusOrlando/SpendWise-Docs
+repo_name: MateusOrlando/SpendWise
+repo_url: https://github.com/MateusOrlando/SpendWise
 edit_uri: edit/main/docs/
 
-# Configuration
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
   font:
     text: Inter
     code: JetBrains Mono
+
   palette:
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: emerald
@@ -24,61 +25,35 @@ theme:
         icon: material/brightness-7
         name: Mudar para modo escuro
 
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: emerald
-      accent: sky
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: Mudar para modo claro
 
   features:
-    - announce.dismiss
-    - content.action.edit
-    - content.action.view
-    - content.code.annotate
-    - content.code.copy
-    - content.code.select
-    - content.tabs.link
-    - content.tooltips
-    - navigation.expand
-    - navigation.footer
-    - navigation.indexes
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
-    - navigation.sections
+    - navigation.top
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.top
-    - search.highlight
-    - search.share
+    - navigation.sections
+    - navigation.footer
     - search.suggest
-    - toc.follow
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+    - content.action.edit
+    - content.action.view
 
-  icon:
-    repo: fontawesome/brands/github
-    edit: material/pencil
-    view: material/eye
-
-  logo: assets/logo.png
-  favicon: assets/favicon.ico
-  
-  custom_dir: overrides
-
-# Extra CSS
-extra_css:
-  - assets/stylesheets/extra.css
-
-# Plugins
 plugins:
   - search:
       lang: pt
 
-# Markdown extensions
+extra_css:
+  - assets/stylesheets/extra.css
+
 markdown_extensions:
-  - abbr
   - admonition
   - attr_list
   - def_list
@@ -86,117 +61,49 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-      title: Nesta página
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      normalize_issue_symbols: true
-      repo_url_shorthand: true
-      user: MateusOrlando
-      repo: SpendWise-Docs
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+  - pymdownx.superfences
+  - pymdownx.highlight
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
   - tables
 
-# Page tree
-nav:
-  - Início: index.md
-  - Visão Geral:
-    - Sobre o Projeto: overview/about.md
-    - Arquitetura: overview/architecture.md
-    - Tecnologias: overview/technologies.md
-  - Backend:
-    - Introdução: backend/index.md
-    - Clean Architecture: backend/clean-architecture.md
-    - Camadas:
-      - Domain Layer: backend/domain.md
-      - Application Layer: backend/application.md
-      - Infrastructure Layer: backend/infrastructure.md
-      - API Layer: backend/api.md
-    - Product Backlog: backend/backlog.md
-    - Testes: backend/testes.md
-  - Frontend:
-    - Introdução: frontend/index.md
-    - Arquitetura: frontend/arquitetura.md
-    - Componentes: frontend/componentes.md
-    - Integração API: frontend/api-integration.md
-    - Testes: frontend/testes.md
-    - Product Backlog: frontend/backlog.md
-  - Docker & DevOps:
-    - Docker: docker/index.md
-    - Desenvolvimento: docker/development.md
-    - Produção: docker/production.md
-    - CI/CD: docker/cicd.md
-  - API Reference:
-    - Autenticação: api/auth.md
-    - Usuários: api/users.md
-    - Categorias: api/categories.md
-    - Transações: api/transactions.md
-    - Relatórios: api/reports.md
-  - Diagramas:
-    - Visão Geral: diagrams/index.md
-    - MER (Modelo Conceitual): diagrams/MER-SpendWise.md
-    - Modelo de Dados: diagrams/data-model.md
-    - Arquitetura: diagrams/architecture.md
-  - Guias:
-    - Setup Local: guides/setup.md
-    - Contribuição: guides/contributing.md
-    - Deploy: guides/deploy.md
-    - Troubleshooting: guides/troubleshooting.md
-  - Especificações:
-    - Regras de Negócio: specs/business-rules.md
-    - User Stories: specs/user-stories.md
-    - Padrões: specs/patterns.md
-
-# Extra
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/MateusOrlando
+      link: https://github.com/MateusPy
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/mateusorlando
     - icon: fontawesome/solid/envelope
-      link: mailto:mateus.orlando@unb.br
+      link: mailto:mateusorlando2014@gmail.com
 
-  version:
-    provider: mike
-    default: latest
-
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
-
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're looking for. With your consent, you're helping us to
-      make our documentation better.
+nav:
+  - Início: index.md
+  - Visão Geral:
+      - Sobre o Projeto: overview/about.md
+      - Arquitetura: overview/architecture.md
+      - Tecnologias: overview/technologies.md
+  - Backend:
+      - Introdução: backend/index.md
+      - Camada Domain: backend/domain.md
+      - Camada Application: backend/application.md
+      - Camada Infrastructure: backend/infrastructure.md
+      - API: backend/api.md
+      - Testes: backend/testes.md
+      - Backlog: backend/backlog.md
+      - Clean Architecture: backend/clean-architecture.md
+  - Frontend:
+      - Introdução: frontend/index.md
+      - Componentes: frontend/componentes.md
+      - Arquitetura: frontend/arquitetura.md
+      - Integração API: frontend/api-integration.md
+      - Testes: frontend/testes.md
+      - Backlog: frontend/backlog.md
+  - Diagramas:
+      - Visão Geral: diagrams/index.md
+      - Modelo Conceitual (MER): diagrams/MER-SpendWise.md
+      - Modelo de Dados: diagrams/data-model.md
+      - Arquitetura: diagrams/architecture.md
+  - Guias:
+      - Setup: guides/setup.md
+      - Contribuição: guides/contributing.md
+      - Troubleshooting: guides/troubleshooting.md
