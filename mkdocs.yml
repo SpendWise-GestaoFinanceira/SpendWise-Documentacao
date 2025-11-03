@@ -14,7 +14,7 @@ theme:
       primary: emerald
       accent: sky
 extra_css:
-  - assets/stylesheets/extra.css
+  - ./docs/assets/stylesheets/extra.css
 
 nav:
   - Home: index.md
