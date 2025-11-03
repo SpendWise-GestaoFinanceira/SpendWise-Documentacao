@@ -1,8 +1,23 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
+<div class="hero" markdown>
+
 # SpendWise
 
-## Sistema de Gestão de Finanças Pessoais
+### Sistema de Gestão de Finanças Pessoais
 
 Plataforma moderna e completa para controle financeiro pessoal, construída com Clean Architecture, DDD e as melhores práticas de desenvolvimento de software.
+
+<div class="hero-buttons" markdown>
+[Começar Agora](guides/setup.md){ .md-button .md-button--primary }
+[Ver Documentação](overview/about.md){ .md-button }
+</div>
+
+</div>
 
 ---
 
