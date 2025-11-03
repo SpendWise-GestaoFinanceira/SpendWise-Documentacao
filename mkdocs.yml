@@ -1,4 +1,4 @@
-site_name: SpendWise Documentation
+site_name: SpendWise
 theme:
   name: material
   features:

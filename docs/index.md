@@ -4,16 +4,16 @@ hide:
   - toc
 ---
 
-<div class="hero" markdown="1">
+<div class="hero">
 
-# SpendWise
-### Sistema de gestão financeira pessoal com Clean Architecture, DDD e Next.js
+  <h1>SpendWise</h1>
+  <h3>Sistema de gestão financeira pessoal com Clean Architecture, DDD e Next.js</h3>
 
-<div class="hero-buttons" markdown="1">
-[Começar Agora](guides/setup.md){ .md-button .md-button--primary }
-[Documentação](overview/about.md){ .md-button }
-[GitHub](https://github.com/MateusOrlando/SpendWise){ .md-button }
-</div>
+  <div class="hero-buttons">
+    <a href="guides/setup.html" class="md-button md-button--primary">Começar Agora</a>
+    <a href="overview/about.html" class="md-button">Documentação</a>
+    <a href="https://github.com/MateusOrlando/SpendWise" class="md-button">GitHub</a>
+  </div>
 
 </div>
 
@@ -21,32 +21,35 @@ hide:
 
 ## Principais Seções
 
-<div class="grid cards" markdown="1">
+<div class="grid cards">
 
-- **Visão Geral**
-  ---
-  Introdução à arquitetura e motivação do projeto  
-  [Acessar](overview/about.md)
-
-- **Backend**
-  ---
-  ASP.NET Core — Domain, Application, Infra e API  
-  [Acessar](backend/index.md)
-
-- **Frontend**
-  ---
-  Next.js + Tailwind + Radix UI  
-  [Acessar](frontend/index.md)
-
-- **Docker & DevOps**
-  ---
-  Execução local e em produção com Docker & CI/CD  
-  [Acessar](docker/index.md)
-
-- **API**
-  ---
-  Endpoints e exemplos de uso  
-  [Acessar](api/auth.md)
+<ul>
+  <li>
+    <strong>Visão Geral</strong>
+    <p>Introdução à arquitetura e motivação do projeto</p>
+    <a href="overview/about.html">Acessar →</a>
+  </li>
+  <li>
+    <strong>Backend</strong>
+    <p>ASP.NET Core — Domain, Application, Infra e API</p>
+    <a href="backend/index.html">Acessar →</a>
+  </li>
+  <li>
+    <strong>Frontend</strong>
+    <p>Next.js + Tailwind + Radix UI</p>
+    <a href="frontend/index.html">Acessar →</a>
+  </li>
+  <li>
+    <strong>Docker & DevOps</strong>
+    <p>Execução local e em produção com Docker & CI/CD</p>
+    <a href="docker/index.html">Acessar →</a>
+  </li>
+  <li>
+    <strong>API</strong>
+    <p>Endpoints e exemplos de uso</p>
+    <a href="api/auth.html">Acessar →</a>
+  </li>
+</ul>
 
 </div>
 
