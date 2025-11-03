@@ -1,109 +1,25 @@
-site_name: SpendWise - Documentação Técnica
-site_description: Documentação completa do sistema de finanças pessoais SpendWise
-site_author: Mateus Orlando
-site_url: https://mateusorlando.github.io/SpendWise-Documentacao
-
-repo_name: MateusOrlando/SpendWise
-repo_url: https://github.com/MateusOrlando/SpendWise
-edit_uri: edit/main/docs/
-
+site_name: SpendWise Documentation
 theme:
   name: material
-  logo: assets/logo.png
-  favicon: assets/favicon.ico
-
-  font:
-    text: Inter
-    code: JetBrains Mono
-
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: emerald
       accent: sky
-      toggle:
-        icon: material/brightness-7
-        name: Mudar para modo escuro
-
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: emerald
-      accent: teal
-      toggle:
-        icon: material/brightness-4
-        name: Mudar para modo claro
-
-  features:
-    - navigation.top
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.footer
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-    - toc.integrate
-    - content.action.edit
-    - content.action.view
-
-plugins:
-  - search:
-      lang: pt
-
+      accent: sky
 extra_css:
   - assets/stylesheets/extra.css
 
-markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - toc:
-      permalink: true
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - tables
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/MateusPy
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/mateusorlando
-    - icon: fontawesome/solid/envelope
-      link: mailto:mateusorlando2014@gmail.com
-
 nav:
-  - Início: index.md
-  - Visão Geral:
-      - Sobre o Projeto: overview/about.md
-      - Arquitetura: overview/architecture.md
-      - Tecnologias: overview/technologies.md
-  - Backend:
-      - Introdução: backend/index.md
-      - Camada Domain: backend/domain.md
-      - Camada Application: backend/application.md
-      - Camada Infrastructure: backend/infrastructure.md
-      - API: backend/api.md
-      - Testes: backend/testes.md
-      - Backlog: backend/backlog.md
-      - Clean Architecture: backend/clean-architecture.md
-  - Frontend:
-      - Introdução: frontend/index.md
-      - Componentes: frontend/componentes.md
-      - Arquitetura: frontend/arquitetura.md
-      - Integração API: frontend/api-integration.md
-      - Testes: frontend/testes.md
-      - Backlog: frontend/backlog.md
-  - Diagramas:
-      - Visão Geral: diagrams/index.md
-      - Modelo Conceitual (MER): diagrams/MER-SpendWise.md
-      - Modelo de Dados: diagrams/data-model.md
-      - Arquitetura: diagrams/architecture.md
-  - Guias:
-      - Setup: guides/setup.md
-      - Contribuição: guides/contributing.md
-      - Troubleshooting: guides/troubleshooting.md
+  - Home: index.md
+  - Visão Geral: overview/about.md
+  - Backend: backend/index.md
+  - Frontend: frontend/index.md
+  - Docker & DevOps: docker/index.md
+  - API: api/auth.md

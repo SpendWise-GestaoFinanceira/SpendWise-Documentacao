@@ -6,10 +6,8 @@ hide:
 
 <div class="hero" markdown="1">
 
-# SpendWise  
-### Sistema de Gestão Financeira Pessoal  
-
-Plataforma moderna para controle financeiro pessoal, construída com **Clean Architecture**, **DDD**, **CQRS**, **ASP.NET Core**, **Next.js** e **Docker**.
+# SpendWise
+### Sistema de gestão financeira pessoal com Clean Architecture, DDD e Next.js
 
 <div class="hero-buttons" markdown="1">
 [Começar Agora](guides/setup.md){ .md-button .md-button--primary }
@@ -30,11 +28,6 @@ Plataforma moderna para controle financeiro pessoal, construída com **Clean Arc
   Introdução à arquitetura e motivação do projeto  
   [Acessar](overview/about.md)
 
-- **Arquitetura**
-  ---
-  Clean Architecture, CQRS e DDD  
-  [Acessar](overview/architecture.md)
-
 - **Backend**
   ---
   ASP.NET Core — Domain, Application, Infra e API  
@@ -45,12 +38,12 @@ Plataforma moderna para controle financeiro pessoal, construída com **Clean Arc
   Next.js + Tailwind + Radix UI  
   [Acessar](frontend/index.md)
 
-- **Docker & Deploy**
+- **Docker & DevOps**
   ---
   Execução local e em produção com Docker & CI/CD  
   [Acessar](docker/index.md)
 
-- **API Reference**
+- **API**
   ---
   Endpoints e exemplos de uso  
   [Acessar](api/auth.md)
@@ -62,5 +55,3 @@ Plataforma moderna para controle financeiro pessoal, construída com **Clean Arc
 ## 👨‍💻 Autor
 
 Mateus Orlando Medeiros Ribeiro
-
-
