@@ -20,7 +20,7 @@
   padding: 4rem 2rem 3rem;
   background: linear-gradient(135deg, #F0FDF4 0%, #ECFEFF 100%);
   border-radius: 1rem;
-  margin: -2rem -2rem 3rem;
+  margin: 0 0 3rem 0;
 }
 
 [data-md-color-scheme="slate"] .hero {
