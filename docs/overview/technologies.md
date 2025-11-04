@@ -48,7 +48,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Versão**: 3.0
 - **Benefícios**: Logs organizados, fácil análise
 
-## ⚛️ **Frontend (Next.js 14)**
+##  **Frontend (Next.js 14)**
 
 ### **Next.js 14**
 - **Framework**: React com App Router
@@ -86,7 +86,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Versão**: 2.0
 - **Benefícios**: Gráficos modernos, fácil uso
 
-## 🐳 **DevOps & Infraestrutura**
+##  **DevOps & Infraestrutura**
 
 ### **Docker**
 - **Containerização**: Aplicações isoladas
@@ -112,7 +112,7 @@ O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnolog
 - **Versão**: Latest
 - **Benefícios**: Integração contínua, deploy automático
 
-## 🧪 **Testes & Qualidade**
+##  **Testes & Qualidade**
 
 ### **xUnit**
 - **Framework**: Testes unitários

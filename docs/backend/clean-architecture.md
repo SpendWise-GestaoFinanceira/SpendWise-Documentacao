@@ -6,7 +6,7 @@ O SpendWise implementa **Clean Architecture** seguindo os princípios de **Rober
 
 ---
 
-## 📐 **Princípios Fundamentais**
+##  **Princípios Fundamentais**
 
 ### **1. Regra da Dependência**
 ```mermaid
@@ -516,7 +516,7 @@ public static class DependencyInjection
 
 ---
 
-## 🧪 **Testabilidade**
+##  **Testabilidade**
 
 ### **Unit Tests (Domain)**
 ```csharp

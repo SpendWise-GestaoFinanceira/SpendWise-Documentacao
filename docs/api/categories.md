@@ -1,6 +1,6 @@
-﻿# API - Categorias
+# API - Categorias
 
-## 🏷️ **Endpoints de Categorias**
+##  **Endpoints de Categorias**
 
 Esta seção documenta todos os endpoints relacionados ao gerenciamento de categorias no sistema SpendWise.
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 ---
 
-## 🔍 **GET /api/categorias/{id}**
+##  **GET /api/categorias/{id}**
 
 Obtém uma categoria específica por ID.
 
@@ -160,7 +160,7 @@ Content-Type: application/json
 
 ---
 
-## ➕ **POST /api/categorias**
+##  **POST /api/categorias**
 
 Cria uma nova categoria.
 
@@ -227,7 +227,7 @@ Content-Type: application/json
 
 ---
 
-## ✏️ **PUT /api/categorias/{id}**
+##  **PUT /api/categorias/{id}**
 
 Atualiza uma categoria existente.
 
@@ -274,7 +274,7 @@ Content-Type: application/json
 
 ---
 
-## 🗑️ **DELETE /api/categorias/{id}**
+##  **DELETE /api/categorias/{id}**
 
 Exclui uma categoria (soft delete).
 
@@ -381,7 +381,7 @@ Content-Type: application/json
 
 ---
 
-## 🔄 **POST /api/categorias/{id}/ativar**
+##  **POST /api/categorias/{id}/ativar**
 
 Ativa uma categoria desativada.
 
@@ -404,7 +404,7 @@ Content-Type: application/json
 
 ---
 
-## ⏸️ **POST /api/categorias/{id}/desativar**
+## ⏸ **POST /api/categorias/{id}/desativar**
 
 Desativa uma categoria.
 
@@ -480,7 +480,7 @@ Content-Type: application/json
 
 ---
 
-## 📝 **Códigos de Erro**
+##  **Códigos de Erro**
 
 | Código | Descrição |
 |--------|-----------|
@@ -492,7 +492,7 @@ Content-Type: application/json
 
 ---
 
-## 🧪 **Exemplos de Uso**
+##  **Exemplos de Uso**
 
 ### **cURL - Criar Categoria**
 ```bash

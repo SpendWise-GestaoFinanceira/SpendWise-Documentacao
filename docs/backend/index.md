@@ -33,33 +33,33 @@ O backend do SpendWise foi desenvolvido seguindo os princípios de **Clean Archi
 - **Queries** para operações de leitura
 - **Handlers** especializados para cada operação
 
-### **📁 Estrutura do Projeto**
+### ** Estrutura do Projeto**
 
 ```
 SpendWise.Backend/
-├── src/
-│   ├── SpendWise.Domain/           # Camada de Domínio
-│   │   ├── Entities/              # Entidades de domínio
-│   │   ├── ValueObjects/          # Objetos de valor
-│   │   ├── Aggregates/            # Agregados
-│   │   └── Services/              # Serviços de domínio
-│   ├── SpendWise.Application/      # Camada de Aplicação
-│   │   ├── Commands/              # Comandos CQRS
-│   │   ├── Queries/               # Consultas CQRS
-│   │   ├── Handlers/              # Manipuladores
-│   │   └── DTOs/                  # Objetos de transferência
-│   ├── SpendWise.Infrastructure/   # Camada de Infraestrutura
-│   │   ├── Data/                  # Contexto EF Core
-│   │   ├── Repositories/          # Implementação de repositórios
-│   │   └── Services/              # Serviços externos
-│   └── SpendWise.API/             # Camada de Apresentação
-│       ├── Controllers/           # Controladores Web API
-│       ├── Middlewares/           # Middlewares customizados
-│       └── Configuration/         # Configurações
-└── tests/
-    ├── SpendWise.Domain.Tests/    # Testes de domínio
-    ├── SpendWise.Application.Tests/ # Testes de aplicação
-    └── SpendWise.API.Tests/       # Testes de integração
+ src/
+    SpendWise.Domain/           # Camada de Domínio
+       Entities/              # Entidades de domínio
+       ValueObjects/          # Objetos de valor
+       Aggregates/            # Agregados
+       Services/              # Serviços de domínio
+    SpendWise.Application/      # Camada de Aplicação
+       Commands/              # Comandos CQRS
+       Queries/               # Consultas CQRS
+       Handlers/              # Manipuladores
+       DTOs/                  # Objetos de transferência
+    SpendWise.Infrastructure/   # Camada de Infraestrutura
+       Data/                  # Contexto EF Core
+       Repositories/          # Implementação de repositórios
+       Services/              # Serviços externos
+    SpendWise.API/             # Camada de Apresentação
+        Controllers/           # Controladores Web API
+        Middlewares/           # Middlewares customizados
+        Configuration/         # Configurações
+ tests/
+     SpendWise.Domain.Tests/    # Testes de domínio
+     SpendWise.Application.Tests/ # Testes de aplicação
+     SpendWise.API.Tests/       # Testes de integração
 ```
 
 ### **Fluxo de Dados**

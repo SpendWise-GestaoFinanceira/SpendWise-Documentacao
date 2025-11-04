@@ -1,6 +1,6 @@
-﻿# API - Usuários
+# API - Usuários
 
-## 👤 **Endpoints de Usuários**
+##  **Endpoints de Usuários**
 
 Esta seção documenta todos os endpoints relacionados ao gerenciamento de usuários no sistema SpendWise.
 
@@ -45,7 +45,7 @@ Esta seção documenta todos os endpoints relacionados ao gerenciamento de usuá
 
 ---
 
-## 🔍 **GET /api/usuarios/profile**
+##  **GET /api/usuarios/profile**
 
 Obtém o perfil do usuário autenticado.
 
@@ -94,7 +94,7 @@ Content-Type: application/json
 
 ---
 
-## ✏️ **PUT /api/usuarios/profile**
+##  **PUT /api/usuarios/profile**
 
 Atualiza o perfil do usuário autenticado.
 
@@ -151,7 +151,7 @@ Content-Type: application/json
 
 ---
 
-## ⚙️ **PUT /api/usuarios/configuracoes**
+##  **PUT /api/usuarios/configuracoes**
 
 Atualiza as configurações do usuário.
 
@@ -199,7 +199,7 @@ Content-Type: application/json
 
 ---
 
-## 🔒 **PUT /api/usuarios/senha**
+##  **PUT /api/usuarios/senha**
 
 Altera a senha do usuário.
 
@@ -286,7 +286,7 @@ Content-Type: application/json
 
 ---
 
-## 🗑️ **DELETE /api/usuarios/conta**
+##  **DELETE /api/usuarios/conta**
 
 Exclui a conta do usuário (soft delete).
 
@@ -325,7 +325,7 @@ Content-Type: application/json
 
 ---
 
-## 📤 **GET /api/usuarios/exportar**
+##  **GET /api/usuarios/exportar**
 
 Exporta todos os dados do usuário.
 
@@ -355,7 +355,7 @@ Content-Type: application/json
 
 ---
 
-## 📝 **Códigos de Erro**
+##  **Códigos de Erro**
 
 | Código | Descrição |
 |--------|-----------|
@@ -368,7 +368,7 @@ Content-Type: application/json
 
 ---
 
-## 🧪 **Exemplos de Uso**
+##  **Exemplos de Uso**
 
 ### **cURL - Obter Perfil**
 ```bash

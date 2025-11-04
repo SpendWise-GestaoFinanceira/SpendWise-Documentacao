@@ -13,25 +13,25 @@ A camada de API é responsável por expor endpoints REST, gerenciar requisiçõe
 
 ```
 SpendWise.API/
-├── Controllers/
-│   ├── AuthController.cs
-│   ├── UsuariosController.cs
-│   ├── CategoriasController.cs
-│   ├── TransacoesController.cs
-│   ├── OrcamentosMensaisController.cs
-│   ├── FechamentoMensalController.cs
-│   ├── MetasController.cs
-│   ├── RelatoriosController.cs
-│   ├── HealthController.cs
-│   └── HealthCheckController.cs
-├── Middleware/
-│   ├── ErrorHandlingMiddleware.cs
-│   └── RequestLoggingMiddleware.cs
-├── Extensions/
-│   └── ClaimsPrincipalExtensions.cs
-├── Program.cs
-├── appsettings.json
-└── appsettings.Development.json
+ Controllers/
+    AuthController.cs
+    UsuariosController.cs
+    CategoriasController.cs
+    TransacoesController.cs
+    OrcamentosMensaisController.cs
+    FechamentoMensalController.cs
+    MetasController.cs
+    RelatoriosController.cs
+    HealthController.cs
+    HealthCheckController.cs
+ Middleware/
+    ErrorHandlingMiddleware.cs
+    RequestLoggingMiddleware.cs
+ Extensions/
+    ClaimsPrincipalExtensions.cs
+ Program.cs
+ appsettings.json
+ appsettings.Development.json
 ```
 
 ## Controllers

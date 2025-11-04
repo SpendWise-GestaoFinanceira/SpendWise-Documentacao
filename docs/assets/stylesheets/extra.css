@@ -1,18 +1,20 @@
 /* ===== SpendWise Documentation - Modern Styling ===== */
-/* Se este CSS estiver carregado, os estilos abaixo serao aplicados */
+/* CSS CARREGADO COM SUCESSO! */
 
 /* Typography - Inspired by Stripe/Linear */
 :root {
-  --md-text-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --md-code-font: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+  --md-text-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  --md-code-font: "JetBrains Mono", "Fira Code", "Courier New", monospace !important;
   
   /* Modern Colors - Emerald & Sky */
-  --md-primary-fg-color: #10B981;
-  --md-accent-fg-color: #0EA5E9;
+  --md-primary-fg-color: #10B981 !important;
+  --md-primary-fg-color--light: #34D399 !important;
+  --md-primary-fg-color--dark: #059669 !important;
+  --md-accent-fg-color: #0EA5E9 !important;
   
   /* Text Colors */
-  --md-typeset-color: #0F172A;
-  --md-typeset-a-color: #0EA5E9;
+  --md-typeset-color: #0F172A !important;
+  --md-typeset-a-color: #0EA5E9 !important;
 }
 
 /* Dark mode colors */

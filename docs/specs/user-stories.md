@@ -1,4 +1,4 @@
-﻿# User Stories - SpendWise
+# User Stories - SpendWise
 
 > **Visão**: App de finanças pessoais para registrar receitas/despesas, controlar orçamento mensal, fechar meses e analisar relatórios.  
 > **Personas**: Usuário final (pessoa física).  
@@ -19,7 +19,7 @@
 
 ---
 
-## 🔐 **E1 — Autenticação & Sessão**
+##  **E1 — Autenticação & Sessão**
 
 **Objetivo**: permitir acesso seguro ao app (criar conta, login, logout, recuperação).  
 **Valor**: segurança e personalização por usuário.  
@@ -52,7 +52,7 @@ E devo ver meu nome no topo da aplicação
 
 ---
 
-## 🏷️ **E2 — Categorias**
+##  **E2 — Categorias**
 
 **Objetivo**: organizar **despesas** por tipo e limites.  
 **Valor**: visibilidade de gastos e alertas por categoria.  
@@ -84,7 +84,7 @@ E se informar limite, deve ser >= 0
 
 ---
 
-## 💳 **E3 — Transações**
+##  **E3 — Transações**
 
 **Objetivo**: CRUD de receitas e despesas com filtros.  
 **Valor**: registrar e analisar movimentações.  
@@ -118,7 +118,7 @@ Então a despesa aparece na lista e atualiza o dashboard
 
 ---
 
-## 💰 **E4 — Orçamento Mensal**
+##  **E4 — Orçamento Mensal**
 
 **Objetivo**: definir teto de gastos do mês e acompanhar uso.  
 **Valor**: controle financeiro por período.  
@@ -140,7 +140,7 @@ E o dashboard mostra % usado
 
 ---
 
-## 🔒 **E5 — Fechamento Mensal**
+##  **E5 — Fechamento Mensal**
 
 **Objetivo**: consolidar o mês e **travar** alterações.  
 **Valor**: integridade histórica.  
@@ -210,7 +210,7 @@ E as transações do mês ficam bloqueadas para edição/exclusão
 
 ---
 
-## 🚨 **E8 — Alertas**
+##  **E8 — Alertas**
 
 **Objetivo**: avisar usuário sobre limites e orçamento.  
 **Valor**: evitar ultrapassar gastos.  
@@ -229,7 +229,7 @@ E as transações do mês ficam bloqueadas para edição/exclusão
 
 ---
 
-## 🔍 **E9 — Observabilidade & Saúde**
+##  **E9 — Observabilidade & Saúde**
 
 **Objetivo**: monitorar disponibilidade e registrar logs.  
 **Valor**: diagnóstico rápido e qualidade operacional.  
@@ -288,31 +288,31 @@ Acessibilidade básica; TTFB razoável em listas; logs estruturados; rate limit 
 
 ## **Status de Implementação**
 
-### **✅ Implementado (Must)**
-- SW-001: Cadastrar conta ✅
-- SW-002: Entrar com e-mail/senha ✅
-- SW-003: Sair da sessão ✅
-- SW-010: Criar categoria ✅
-- SW-011: Editar categoria ✅
-- SW-012: Excluir categoria ✅
-- SW-014: Visualizar categorias com progresso ✅
-- SW-030: Criar despesa ✅
-- SW-031: Criar receita ✅
-- SW-032: Listar/filtrar transações ✅
-- SW-033: Editar transação ✅
-- SW-034: Excluir transação ✅
-- SW-040: Definir orçamento do mês ✅
-- SW-041: Exibir % do orçamento ✅
-- SW-050: Fechar mês ✅
-- SW-051: Exibir status do mês ✅
-- SW-052: Bloquear edição de mês fechado ✅
-- SW-090: Health check ✅
-- SW-091: Logs estruturados ✅
-- SW-100: Docker + Compose ✅
-- SW-101: Pipeline CI ✅
-- SW-102: Testes unitários ✅
+### ** Implementado (Must)**
+- SW-001: Cadastrar conta 
+- SW-002: Entrar com e-mail/senha 
+- SW-003: Sair da sessão 
+- SW-010: Criar categoria 
+- SW-011: Editar categoria 
+- SW-012: Excluir categoria 
+- SW-014: Visualizar categorias com progresso 
+- SW-030: Criar despesa 
+- SW-031: Criar receita 
+- SW-032: Listar/filtrar transações 
+- SW-033: Editar transação 
+- SW-034: Excluir transação 
+- SW-040: Definir orçamento do mês 
+- SW-041: Exibir % do orçamento 
+- SW-050: Fechar mês 
+- SW-051: Exibir status do mês 
+- SW-052: Bloquear edição de mês fechado 
+- SW-090: Health check 
+- SW-091: Logs estruturados 
+- SW-100: Docker + Compose 
+- SW-101: Pipeline CI 
+- SW-102: Testes unitários 
 
-### **🔄 Em Desenvolvimento (Should)**
+### ** Em Desenvolvimento (Should)**
 - SW-004: Recuperar senha
 - SW-013: Reatribuir despesas
 - SW-060: Relatório por categoria
@@ -322,7 +322,7 @@ Acessibilidade básica; TTFB razoável em listas; logs estruturados; rate limit 
 - SW-081: Alerta de orçamento
 - SW-103: Testes de integração
 
-### **📋 Planejado (Could)**
+### ** Planejado (Could)**
 - SW-035: Importar CSV
 - SW-053: Reabrir mês
 - SW-062: Comparativo de meses
@@ -342,5 +342,5 @@ Acessibilidade básica; TTFB razoável em listas; logs estruturados; rate limit 
 - **Em Desenvolvimento**: 8 (19%)
 - **Planejadas**: 12 (29%)
 
-**Status Geral**: 🟢 **Em Andamento** - Funcionalidades essenciais implementadas, foco em melhorias e funcionalidades avançadas.
+**Status Geral**:  **Em Andamento** - Funcionalidades essenciais implementadas, foco em melhorias e funcionalidades avançadas.
 

@@ -1,4 +1,4 @@
-﻿# Regras de Negócio
+# Regras de Negócio
 
 ## **Visão Geral**
 
@@ -17,11 +17,11 @@ Controle de gastos por categoria com limite mensal acumulativo e sistema de aler
 3. **Bloqueio aos 100%**: Impedir nova despesa que ultrapasse o limite
 
 ### **Critérios de Aceitação**
-- ✅ Usuário pode definir limite mensal para cada categoria
-- ✅ Sistema calcula gasto acumulado do mês automaticamente
-- ✅ Alerta é exibido quando gasto ≥ 80% do limite
-- ✅ Despesa é bloqueada quando gasto + nova despesa > limite
-- ✅ Alertas são enviados em tempo real
+-  Usuário pode definir limite mensal para cada categoria
+-  Sistema calcula gasto acumulado do mês automaticamente
+-  Alerta é exibido quando gasto ≥ 80% do limite
+-  Despesa é bloqueada quando gasto + nova despesa > limite
+-  Alertas são enviados em tempo real
 
 ### **Cenários de Teste**
 
@@ -43,7 +43,7 @@ Cenário: Bloqueio ao ultrapassar limite
 
 ---
 
-## 💰 **Regra 2: Orçamento Mensal por Usuário**
+##  **Regra 2: Orçamento Mensal por Usuário**
 
 ### **Descrição**
 Controle global de gastos mensais por usuário, impedindo que o total de despesas ultrapasse o orçamento definido.
@@ -54,11 +54,11 @@ Controle global de gastos mensais por usuário, impedindo que o total de despesa
 3. **Bloqueio Preventivo**: Impedir despesa que exceda orçamento restante
 
 ### **Critérios de Aceitação**
-- ✅ Usuário define orçamento mensal único
-- ✅ Sistema calcula total de despesas do mês
-- ✅ Despesa é bloqueada se exceder saldo restante
-- ✅ Relatório mostra % de utilização do orçamento
-- ✅ Alertas aos 90% de utilização
+-  Usuário define orçamento mensal único
+-  Sistema calcula total de despesas do mês
+-  Despesa é bloqueada se exceder saldo restante
+-  Relatório mostra % de utilização do orçamento
+-  Alertas aos 90% de utilização
 
 ### **Cenários de Teste**
 
@@ -84,10 +84,10 @@ Controles de integridade temporal para garantir consistência dos dados financei
 3. **Auditoria**: Manter histórico de todas as alterações
 
 ### **Critérios de Aceitação**
-- ✅ Data da transação ≤ data atual
-- ✅ Transações de mês fechado são bloqueadas para edição
-- ✅ Fechamento mensal é irreversível
-- ✅ Log de auditoria registra todas as tentativas
+-  Data da transação ≤ data atual
+-  Transações de mês fechado são bloqueadas para edição
+-  Fechamento mensal é irreversível
+-  Log de auditoria registra todas as tentativas
 
 ### **Cenários de Teste**
 
@@ -117,10 +117,10 @@ Sistema inteligente de priorização que bloqueia gastos supérfluos quando há 
 3. **Projeção Inteligente**: Considerar tendências mensais
 
 ### **Critérios de Aceitação**
-- ✅ Categorias classificadas por tipo
-- ✅ Gastos supérfluos bloqueados se orçamento essencial > 100%
-- ✅ Alerta quando projeção essencial indica problema
-- ✅ Exceções podem ser autorizadas manualmente
+-  Categorias classificadas por tipo
+-  Gastos supérfluos bloqueados se orçamento essencial > 100%
+-  Alerta quando projeção essencial indica problema
+-  Exceções podem ser autorizadas manualmente
 
 ### **Cenários de Teste**
 
@@ -145,10 +145,10 @@ Sistema proativo de monitoramento e reporting para educação financeira.
 3. **Análise por Categoria**: Breakdown detalhado dos gastos
 
 ### **Critérios de Aceitação**
-- ✅ Relatório mensal gerado automaticamente
-- ✅ Alertas em tempo real para limites
-- ✅ Comparação mês anterior
-- ✅ Gráficos e visualizações
+-  Relatório mensal gerado automaticamente
+-  Alertas em tempo real para limites
+-  Comparação mês anterior
+-  Gráficos e visualizações
 
 ---
 
@@ -163,10 +163,10 @@ Sistema de definição e acompanhamento de objetivos financeiros com projeções
 3. **Projeção de Alcance**: Estimativa baseada em média mensal
 
 ### **Critérios de Aceitação**
-- ✅ Múltiplas metas simultâneas
-- ✅ Progresso calculado automaticamente
-- ✅ Projeção de data de alcance
-- ✅ Alertas de marcos (25%, 50%, 75%, 100%)
+-  Múltiplas metas simultâneas
+-  Progresso calculado automaticamente
+-  Projeção de data de alcance
+-  Alertas de marcos (25%, 50%, 75%, 100%)
 
 ### **Cenários de Teste**
 
@@ -181,7 +181,7 @@ Cenário: Projeção de meta
 
 ---
 
-## 🔄 **Testes de Integração das Regras**
+##  **Testes de Integração das Regras**
 
 ### **Cenário Complexo: Múltiplas Regras**
 
@@ -202,7 +202,7 @@ Cenário: Validação integrada de todas as regras
 
 ---
 
-## 🧪 **Implementação das Regras**
+##  **Implementação das Regras**
 
 ### **Domain Layer**
 As regras de negócio são implementadas principalmente no Domain Layer:

@@ -10,14 +10,14 @@ O SpendWise utiliza uma arquitetura de componentes modular baseada em shadcn/ui 
 
 ```
 components/
-├── ui/                    # Componentes base (shadcn/ui)
-├── charts/                # Componentes de visualização
-├── categories/            # Componentes de categorias
-├── transactions/          # Componentes de transações
-├── budget/                # Componentes de orçamento
-├── closure/               # Componentes de fechamento
-├── reports/               # Componentes de relatórios
-└── auth/                  # Componentes de autenticação
+ ui/                    # Componentes base (shadcn/ui)
+ charts/                # Componentes de visualização
+ categories/            # Componentes de categorias
+ transactions/          # Componentes de transações
+ budget/                # Componentes de orçamento
+ closure/               # Componentes de fechamento
+ reports/               # Componentes de relatórios
+ auth/                  # Componentes de autenticação
 ```
 
 ## Componentes Base (UI)

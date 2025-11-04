@@ -4,6 +4,8 @@ site_url: https://spendwise-gestaofinanceira.github.io/SpendWise-Documentacao/
 theme:
   name: material
   language: pt-BR
+  logo: assets/logo.png
+  favicon: assets/logo.png
   font:
     text: Inter
     code: JetBrains Mono
@@ -12,20 +14,21 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.tracking
+    - navigation.instant
     - content.code.copy
     - content.code.annotate
     - search.suggest
     - search.highlight
   palette:
     - scheme: default
-      primary: emerald
-      accent: sky
+      primary: teal
+      accent: cyan
       toggle:
         icon: material/brightness-7
         name: Alternar para modo escuro
     - scheme: slate
-      primary: emerald
-      accent: sky
+      primary: teal
+      accent: cyan
       toggle:
         icon: material/brightness-4
         name: Alternar para modo claro
@@ -51,6 +54,9 @@ nav:
     - Sobre o Projeto: overview/about.md
     - Arquitetura: overview/architecture.md
     - Tecnologias: overview/technologies.md
+  - Especificações:
+    - Histórias de Usuário: specs/user-stories.md
+    - Regras de Negócio: specs/business-rules.md
   - Backend:
     - Introdução: backend/index.md
     - Clean Architecture: backend/clean-architecture.md
@@ -59,12 +65,14 @@ nav:
     - Infrastructure Layer: backend/infrastructure.md
     - API Layer: backend/api.md
     - Testes: backend/testes.md
+    - Backlog: backend/backlog.md
   - Frontend:
     - Introdução: frontend/index.md
     - Arquitetura: frontend/arquitetura.md
     - Componentes: frontend/componentes.md
     - Integração API: frontend/api-integration.md
     - Testes: frontend/testes.md
+    - Backlog: frontend/backlog.md
   - Docker & DevOps: docker/index.md
   - API:
     - Autenticação: api/auth.md

@@ -1,4 +1,4 @@
-﻿# Guia de Contribuição
+# Guia de Contribuição
 
 ## **Como Contribuir com o SpendWise**
 
@@ -32,13 +32,13 @@ git checkout -b fix/nome-do-bug
 
 ---
 
-## 📝 **Padrões de Código**
+##  **Padrões de Código**
 
 ### **Backend (.NET)**
 
 #### **Naming Conventions**
 ```csharp
-// ✅ Correto
+//  Correto
 public class TransactionService
 {
     private readonly ITransactionRepository _repository;
@@ -50,7 +50,7 @@ public class TransactionService
     }
 }
 
-// ❌ Incorreto
+//  Incorreto
 public class transactionservice
 {
     private ITransactionRepository repo;
@@ -64,7 +64,7 @@ public class transactionservice
 
 #### **SOLID Principles**
 ```csharp
-// ✅ Single Responsibility
+//  Single Responsibility
 public class EmailService
 {
     public Task SendEmailAsync(string to, string subject, string body) { }
@@ -77,7 +77,7 @@ public class UserNotificationService
     public Task NotifyUserAsync(User user, string message) { }
 }
 
-// ❌ Multiple Responsibilities
+//  Multiple Responsibilities
 public class UserService
 {
     public Task CreateUserAsync(User user) { }
@@ -90,7 +90,7 @@ public class UserService
 
 #### **Component Structure**
 ```typescript
-// ✅ Correto
+//  Correto
 interface TransactionCardProps {
   transaction: Transaction;
   onEdit: (id: string) => void;
@@ -109,7 +109,7 @@ export const TransactionCard: React.FC<TransactionCardProps> = ({
   );
 };
 
-// ❌ Incorreto
+//  Incorreto
 export const TransactionCard = (props: any) => {
   return (
     <div>
@@ -121,7 +121,7 @@ export const TransactionCard = (props: any) => {
 
 #### **Hooks Customizados**
 ```typescript
-// ✅ Correto
+//  Correto
 export const useTransactions = (userId: string) => {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [loading, setLoading] = useState(false);
@@ -146,7 +146,7 @@ export const useTransactions = (userId: string) => {
 
 ---
 
-## 🧪 **Testes**
+##  **Testes**
 
 ### **Cobertura Mínima**
 - **Domain Layer**: 100%
@@ -253,11 +253,11 @@ Adicione screenshots para mudanças na UI.
 
 #### **Como dar feedback**
 ```markdown
-// ✅ Feedback construtivo
+//  Feedback construtivo
 "Considere usar um repository pattern aqui para melhorar a testabilidade. 
 Exemplo: `await _repository.GetByIdAsync(id)`"
 
-// ❌ Feedback não construtivo
+//  Feedback não construtivo
 "Este código está ruim"
 ```
 
@@ -280,15 +280,15 @@ Exemplo: `await _repository.GetByIdAsync(id)`"
 
 ### **Clean Architecture Layers**
 ```
-┌─────────────────────────────────────┐
-│           Presentation              │ ← Controllers, Views
-├─────────────────────────────────────┤
-│           Application               │ ← Use Cases, DTOs
-├─────────────────────────────────────┤
-│             Domain                  │ ← Entities, Value Objects
-├─────────────────────────────────────┤
-│          Infrastructure             │ ← Database, External APIs
-└─────────────────────────────────────┘
+
+           Presentation               ← Controllers, Views
+
+           Application                ← Use Cases, DTOs
+
+             Domain                   ← Entities, Value Objects
+
+          Infrastructure              ← Database, External APIs
+
 ```
 
 ---
@@ -297,7 +297,7 @@ Exemplo: `await _repository.GetByIdAsync(id)`"
 
 ### **Código Autodocumentado**
 ```csharp
-// ✅ Bom
+//  Bom
 public async Task<BudgetStatus> CalculateBudgetStatusAsync(
     CategoryId categoryId, 
     Month month)
@@ -311,7 +311,7 @@ public async Task<BudgetStatus> CalculateBudgetStatusAsync(
         : BudgetStatus.OnTrack;
 }
 
-// ❌ Ruim
+//  Ruim
 public async Task<int> CalcBS(Guid cId, int m)
 {
     // Calculate budget status
@@ -338,7 +338,7 @@ public async Task<BudgetStatus> CalculateBudgetStatusAsync(
 
 ---
 
-## 🔄 **Workflow Git**
+##  **Workflow Git**
 
 ### **Commits Semânticos**
 ```bash
@@ -362,12 +362,12 @@ git commit -m "docs(api): update transaction endpoints documentation"
 ### **Branch Strategy**
 ```
 main
-├── develop
-│   ├── feature/user-authentication
-│   ├── feature/transaction-crud
-│   └── feature/budget-tracking
-├── hotfix/critical-security-fix
-└── release/v1.0.0
+ develop
+    feature/user-authentication
+    feature/transaction-crud
+    feature/budget-tracking
+ hotfix/critical-security-fix
+ release/v1.0.0
 ```
 
 ---
@@ -394,27 +394,27 @@ main
 
 ---
 
-## 🏆 **Reconhecimento**
+##  **Reconhecimento**
 
 ### **Contribuidores**
 Todos os contribuidores são reconhecidos no README e na documentação.
 
 ### **Tipos de Contribuição**
-- 💻 **Código** - Implementação de funcionalidades
-- 📖 **Documentação** - Melhorias na documentação
-- 🐛 **Bug Reports** - Identificação de problemas
-- 💡 **Ideias** - Sugestões de melhorias
-- 🎨 **Design** - Melhorias na UI/UX
-- 🧪 **Testes** - Adição de testes
+-  **Código** - Implementação de funcionalidades
+-  **Documentação** - Melhorias na documentação
+-  **Bug Reports** - Identificação de problemas
+-  **Ideias** - Sugestões de melhorias
+-  **Design** - Melhorias na UI/UX
+-  **Testes** - Adição de testes
 
 ---
 
-## 📞 **Suporte**
+##  **Suporte**
 
 ### **Canais de Comunicação**
-- 💬 **Discussions**: Para perguntas gerais
-- 🐛 **Issues**: Para bugs e feature requests
-- 📧 **Email**: mateus.orlando@unb.br (para questões sensíveis)
+-  **Discussions**: Para perguntas gerais
+-  **Issues**: Para bugs e feature requests
+-  **Email**: mateus.orlando@unb.br (para questões sensíveis)
 
 ### **Horários de Resposta**
 - **Issues críticas**: 24h
@@ -445,5 +445,5 @@ Todos os contribuidores são reconhecidos no README e na documentação.
 
 ---
 
-**Obrigado por contribuir com o SpendWise! 🚀**
+**Obrigado por contribuir com o SpendWise! **
 

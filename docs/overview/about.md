@@ -68,10 +68,10 @@ O projeto segue os princípios da Clean Architecture, com separação clara de r
 
 ```
 SpendWise/
-├── Domain/          # Entidades e regras de negócio
-├── Application/     # Casos de uso (CQRS)
-├── Infrastructure/  # Persistência e serviços externos
-└── API/            # Controllers e middleware
+ Domain/          # Entidades e regras de negócio
+ Application/     # Casos de uso (CQRS)
+ Infrastructure/  # Persistência e serviços externos
+ API/            # Controllers e middleware
 ```
 
 ### **Padrões Aplicados**
@@ -95,7 +95,7 @@ SpendWise/
 - **I** - Interface Segregation: Interfaces específicas
 - **D** - Dependency Inversion: Dependências através de abstrações
 
-## 🧪 **Qualidade de Código**
+##  **Qualidade de Código**
 
 ### **Testes Implementados**
 - **158 testes** com 100% de sucesso
@@ -159,7 +159,7 @@ SpendWise/
 - **CI/CD** funcional
 - **Documentação** completa
 
-## 🎓 **Objetivos Acadêmicos Alcançados**
+##  **Objetivos Acadêmicos Alcançados**
 
 ### **Conceitos de Arquitetura**
 - Clean Architecture
@@ -182,7 +182,7 @@ SpendWise/
 - Documentation as Code
 - DevOps e Deploy
 
-## 🔮 **Próximos Passos**
+##  **Próximos Passos**
 
 ### **Melhorias Planejadas**
 - [ ] Implementar Domain Events

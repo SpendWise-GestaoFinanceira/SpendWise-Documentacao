@@ -1,10 +1,10 @@
-﻿# Guia de Setup Local
+# Guia de Setup Local
 
 ## **Configuração do Ambiente de Desenvolvimento**
 
 Este guia irá te ajudar a configurar o ambiente completo do SpendWise em sua máquina local.
 
-### **📋 Pré-requisitos**
+### ** Pré-requisitos**
 
 #### **Software Necessário**
 - **Node.js 18+** - [Download](https://nodejs.org/)
@@ -20,7 +20,7 @@ Este guia irá te ajudar a configurar o ambiente completo do SpendWise em sua m�
 
 ---
 
-## 🗂️ **Clonando os Repositórios**
+##  **Clonando os Repositórios**
 
 ```bash
 # Criar diretório do projeto
@@ -91,7 +91,7 @@ GRANT ALL PRIVILEGES ON DATABASE spendwise_db TO spendwise_user;
 
 ---
 
-## ⚙️ **Configuração do Backend**
+##  **Configuração do Backend**
 
 ### **1. Navegar para o diretório**
 ```bash
@@ -141,7 +141,7 @@ O backend estará disponível em: `https://localhost:5001`
 
 ---
 
-## 🎨 **Configuração do Frontend**
+##  **Configuração do Frontend**
 
 ### **1. Navegar para o diretório**
 ```bash
@@ -209,7 +209,7 @@ A documentação estará disponível em: `http://localhost:8000`
 
 ---
 
-## 🐳 **Configuração com Docker (Alternativa)**
+##  **Configuração com Docker (Alternativa)**
 
 ### **1. Usando Docker Compose**
 ```bash
@@ -229,7 +229,7 @@ docker-compose logs -f
 
 ---
 
-## ✅ **Verificação da Instalação**
+##  **Verificação da Instalação**
 
 ### **1. Testar Backend**
 ```bash
@@ -284,18 +284,18 @@ kill -9 <PID>
 
 Após a configuração bem-sucedida:
 
-1. ✅ **Explorar a aplicação** - Navegue pelas funcionalidades
-2. ✅ **Ler a documentação** - Entenda a arquitetura
-3. ✅ **Executar testes** - Garanta que tudo funciona
-4. ✅ **Contribuir** - Veja o [guia de contribuição](contributing.md)
+1.  **Explorar a aplicação** - Navegue pelas funcionalidades
+2.  **Ler a documentação** - Entenda a arquitetura
+3.  **Executar testes** - Garanta que tudo funciona
+4.  **Contribuir** - Veja o [guia de contribuição](contributing.md)
 
 ---
 
-## 📞 **Suporte**
+##  **Suporte**
 
 Se encontrar problemas:
 
-- 📖 Consulte o [Troubleshooting](troubleshooting.md)
-- 🐛 Abra uma [issue no GitHub](https://github.com/MateusOrlando/SpendWise/issues)
-- 💬 Entre em contato: mateus.orlando@unb.br
+-  Consulte o [Troubleshooting](troubleshooting.md)
+-  Abra uma [issue no GitHub](https://github.com/MateusOrlando/SpendWise/issues)
+-  Entre em contato: mateus.orlando@unb.br
 

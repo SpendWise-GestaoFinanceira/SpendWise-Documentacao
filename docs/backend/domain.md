@@ -13,34 +13,34 @@ A camada de domínio contém a lógica de negócio central do sistema, incluindo
 
 ```
 SpendWise.Domain/
-├── Entities/
-│   ├── Usuario.cs
-│   ├── Categoria.cs
-│   ├── Transacao.cs
-│   ├── OrcamentoMensal.cs
-│   ├── FechamentoMensal.cs
-│   └── Meta.cs
-├── ValueObjects/
-│   ├── Email.cs
-│   ├── Money.cs
-│   └── Periodo.cs
-├── Enums/
-│   ├── TipoTransacao.cs
-│   ├── TipoCategoria.cs
-│   └── StatusMeta.cs
-├── Interfaces/
-│   ├── IRepository.cs
-│   ├── IUsuarioRepository.cs
-│   ├── ICategoriaRepository.cs
-│   ├── ITransacaoRepository.cs
-│   ├── IOrcamentoMensalRepository.cs
-│   ├── IFechamentoMensalRepository.cs
-│   ├── IMetaRepository.cs
-│   ├── IUnitOfWork.cs
-│   └── IEmailService.cs
-└── Exceptions/
-    ├── DomainException.cs
-    └── ValidationException.cs
+ Entities/
+    Usuario.cs
+    Categoria.cs
+    Transacao.cs
+    OrcamentoMensal.cs
+    FechamentoMensal.cs
+    Meta.cs
+ ValueObjects/
+    Email.cs
+    Money.cs
+    Periodo.cs
+ Enums/
+    TipoTransacao.cs
+    TipoCategoria.cs
+    StatusMeta.cs
+ Interfaces/
+    IRepository.cs
+    IUsuarioRepository.cs
+    ICategoriaRepository.cs
+    ITransacaoRepository.cs
+    IOrcamentoMensalRepository.cs
+    IFechamentoMensalRepository.cs
+    IMetaRepository.cs
+    IUnitOfWork.cs
+    IEmailService.cs
+ Exceptions/
+     DomainException.cs
+     ValidationException.cs
 ```
 
 ## Entidades

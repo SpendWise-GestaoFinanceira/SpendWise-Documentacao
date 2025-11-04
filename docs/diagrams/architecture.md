@@ -1,4 +1,4 @@
-﻿# Diagrama de Classes - SpendWise
+# Diagrama de Classes - SpendWise
 
 ## **Arquitetura de Classes**
 

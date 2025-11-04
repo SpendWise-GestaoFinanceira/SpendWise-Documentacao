@@ -13,49 +13,49 @@ A camada de aplicação contém a lógica de aplicação, coordenando o fluxo de
 
 ```
 SpendWise.Application/
-├── Commands/
-│   ├── Auth/
-│   ├── Categorias/
-│   ├── Transacoes/
-│   ├── OrcamentosMensais/
-│   ├── FechamentoMensal/
-│   └── Metas/
-├── Queries/
-│   ├── Auth/
-│   ├── Categorias/
-│   ├── Transacoes/
-│   ├── OrcamentosMensais/
-│   ├── FechamentoMensal/
-│   ├── Metas/
-│   └── Relatorios/
-├── Handlers/
-│   ├── Auth/
-│   ├── Categorias/
-│   ├── Transacoes/
-│   ├── OrcamentosMensais/
-│   ├── FechamentoMensal/
-│   ├── Metas/
-│   └── Relatorios/
-├── Validators/
-│   ├── Auth/
-│   ├── Categorias/
-│   ├── Transacoes/
-│   ├── OrcamentosMensais/
-│   ├── FechamentoMensal/
-│   └── Metas/
-├── DTOs/
-│   ├── Auth/
-│   ├── Categorias/
-│   ├── Transacoes/
-│   ├── OrcamentosMensais/
-│   ├── FechamentoMensal/
-│   ├── Metas/
-│   └── Relatorios/
-├── Behaviors/
-│   ├── ValidationBehavior.cs
-│   └── LoggingBehavior.cs
-└── Services/
-    └── ExportService.cs
+ Commands/
+    Auth/
+    Categorias/
+    Transacoes/
+    OrcamentosMensais/
+    FechamentoMensal/
+    Metas/
+ Queries/
+    Auth/
+    Categorias/
+    Transacoes/
+    OrcamentosMensais/
+    FechamentoMensal/
+    Metas/
+    Relatorios/
+ Handlers/
+    Auth/
+    Categorias/
+    Transacoes/
+    OrcamentosMensais/
+    FechamentoMensal/
+    Metas/
+    Relatorios/
+ Validators/
+    Auth/
+    Categorias/
+    Transacoes/
+    OrcamentosMensais/
+    FechamentoMensal/
+    Metas/
+ DTOs/
+    Auth/
+    Categorias/
+    Transacoes/
+    OrcamentosMensais/
+    FechamentoMensal/
+    Metas/
+    Relatorios/
+ Behaviors/
+    ValidationBehavior.cs
+    LoggingBehavior.cs
+ Services/
+     ExportService.cs
 ```
 
 ## CQRS Pattern

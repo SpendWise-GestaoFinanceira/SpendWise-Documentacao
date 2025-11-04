@@ -1,4 +1,4 @@
-﻿# Modelo de Dados - SpendWise
+# Modelo de Dados - SpendWise
 
 ## **Modelo Entidade-Relacionamento (MER)**
 

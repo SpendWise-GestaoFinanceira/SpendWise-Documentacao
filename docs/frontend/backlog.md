@@ -3,7 +3,7 @@
 !!! info "Informação"
     Este documento apresenta o **Product Backlog completo** do frontend SpendWise, organizado em épicos e histórias de usuário seguindo metodologias ágeis.
 
-## 📊 Resumo Executivo
+##  Resumo Executivo
 
 | Métrica | Valor | Status |
 |---------|-------|--------|
@@ -696,7 +696,7 @@
 
 ---
 
-## 📊 Estatísticas Finais
+##  Estatísticas Finais
 
 ```mermaid
 pie title Distribuição de Histórias por Épico
@@ -714,43 +714,43 @@ pie title Distribuição de Histórias por Épico
 
 ---
 
-## 📁 Estrutura de Arquivos
+##  Estrutura de Arquivos
 
 ```
 frontend/
-├── app/
-│   ├── (app)/              # 8 páginas autenticadas
-│   ├── (auth)/             # 4 páginas de autenticação
-│   ├── demo/               # 7 páginas de demonstração
-│   └── page.tsx            # Landing page
-├── components/
-│   ├── ui/                 # 40+ componentes (shadcn/ui)
-│   ├── charts/             # 5 gráficos (recharts)
-│   └── [outros]/           # Componentes específicos
-├── hooks/                  # 8 hooks customizados
-├── lib/
-│   ├── api/                # Cliente API
-│   ├── contexts/           # Context API
-│   └── utils/              # Utilitários
-└── e2e/                    # Testes E2E (Playwright)
+ app/
+    (app)/              # 8 páginas autenticadas
+    (auth)/             # 4 páginas de autenticação
+    demo/               # 7 páginas de demonstração
+    page.tsx            # Landing page
+ components/
+    ui/                 # 40+ componentes (shadcn/ui)
+    charts/             # 5 gráficos (recharts)
+    [outros]/           # Componentes específicos
+ hooks/                  # 8 hooks customizados
+ lib/
+    api/                # Cliente API
+    contexts/           # Context API
+    utils/              # Utilitários
+ e2e/                    # Testes E2E (Playwright)
 ```
 
 ---
 
-## 🎯 Valor Entregue
+##  Valor Entregue
 
 ### Para o Usuário:
-- ✅ Sistema completo de gestão financeira
-- ✅ Interface moderna e intuitiva
-- ✅ Controle total de receitas e despesas
-- ✅ Alertas e notificações inteligentes
-- ✅ Relatórios e análises detalhadas
-- ✅ Modo demo para experimentar
+-  Sistema completo de gestão financeira
+-  Interface moderna e intuitiva
+-  Controle total de receitas e despesas
+-  Alertas e notificações inteligentes
+-  Relatórios e análises detalhadas
+-  Modo demo para experimentar
 
 ### Para o Desenvolvedor:
-- ✅ Código TypeScript 100% tipado
-- ✅ Componentes reutilizáveis
-- ✅ Testes automatizados
-- ✅ CI/CD configurado
-- ✅ Docker pronto para produção
-- ✅ Documentação completa
+-  Código TypeScript 100% tipado
+-  Componentes reutilizáveis
+-  Testes automatizados
+-  CI/CD configurado
+-  Docker pronto para produção
+-  Documentação completa

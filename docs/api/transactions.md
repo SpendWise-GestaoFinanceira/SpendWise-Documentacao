@@ -1,6 +1,6 @@
-﻿# API - Transações
+# API - Transações
 
-## 💰 **Endpoints de Transações**
+##  **Endpoints de Transações**
 
 Esta seção documenta todos os endpoints relacionados ao gerenciamento de transações no sistema SpendWise.
 
@@ -144,7 +144,7 @@ Content-Type: application/json
 
 ---
 
-## 🔍 **GET /api/transacoes/{id}**
+##  **GET /api/transacoes/{id}**
 
 Obtém uma transação específica por ID.
 
@@ -200,7 +200,7 @@ Content-Type: application/json
 
 ---
 
-## ➕ **POST /api/transacoes**
+##  **POST /api/transacoes**
 
 Cria uma nova transação.
 
@@ -277,7 +277,7 @@ Content-Type: application/json
 
 ---
 
-## ✏️ **PUT /api/transacoes/{id}**
+##  **PUT /api/transacoes/{id}**
 
 Atualiza uma transação existente.
 
@@ -327,7 +327,7 @@ Content-Type: application/json
 
 ---
 
-## 🗑️ **DELETE /api/transacoes/{id}**
+##  **DELETE /api/transacoes/{id}**
 
 Exclui uma transação.
 
@@ -480,7 +480,7 @@ Content-Type: application/json
 
 ---
 
-## 🔄 **POST /api/transacoes/recorrentes**
+##  **POST /api/transacoes/recorrentes**
 
 Cria uma transação recorrente.
 
@@ -537,7 +537,7 @@ Content-Type: application/json
 
 ---
 
-## 📤 **POST /api/transacoes/importar**
+##  **POST /api/transacoes/importar**
 
 Importa transações de arquivo CSV/Excel.
 
@@ -572,7 +572,7 @@ Content-Type: multipart/form-data
 
 ---
 
-## 📥 **GET /api/transacoes/exportar**
+##  **GET /api/transacoes/exportar**
 
 Exporta transações para CSV/Excel.
 
@@ -600,7 +600,7 @@ Data,Descrição,Valor,Tipo,Categoria,Observações
 
 ---
 
-## 📝 **Códigos de Erro**
+##  **Códigos de Erro**
 
 | Código | Descrição |
 |--------|-----------|
@@ -614,7 +614,7 @@ Data,Descrição,Valor,Tipo,Categoria,Observações
 
 ---
 
-## 🧪 **Exemplos de Uso**
+##  **Exemplos de Uso**
 
 ### **cURL - Criar Transação**
 ```bash

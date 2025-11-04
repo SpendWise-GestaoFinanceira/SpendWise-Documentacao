@@ -18,20 +18,20 @@ O backend possui uma cobertura de testes abrangente, incluindo testes unitários
 
 ```
 tests/
-├── SpendWise.Domain.Tests/
-│   ├── Entities/
-│   ├── ValueObjects/
-│   └── coverage.cobertura.xml
-├── SpendWise.Application.Tests/
-│   ├── Handlers/
-│   ├── Validators/
-│   └── Core/
-├── SpendWise.Infrastructure.Tests/
-│   ├── Repositories/
-│   └── Data/
-└── SpendWise.API.Tests/
-    ├── Controllers/
-    └── Fixtures/
+ SpendWise.Domain.Tests/
+    Entities/
+    ValueObjects/
+    coverage.cobertura.xml
+ SpendWise.Application.Tests/
+    Handlers/
+    Validators/
+    Core/
+ SpendWise.Infrastructure.Tests/
+    Repositories/
+    Data/
+ SpendWise.API.Tests/
+     Controllers/
+     Fixtures/
 ```
 
 ## Testes de Domínio

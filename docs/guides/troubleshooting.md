@@ -1,4 +1,4 @@
-﻿# Troubleshooting
+# Troubleshooting
 
 ## **Guia de Resolução de Problemas**
 
@@ -53,7 +53,7 @@ dotnet run --urls="https://localhost:5002"
 
 ---
 
-## 🎨 **Problemas do Frontend**
+##  **Problemas do Frontend**
 
 ### **Frontend não conecta com Backend**
 
@@ -147,7 +147,7 @@ local   all             all                                     md5
 
 ---
 
-## 🐳 **Problemas com Docker**
+##  **Problemas com Docker**
 
 ### **Container não inicia**
 
@@ -191,7 +191,7 @@ cat .dockerignore
 
 ---
 
-## 🔐 **Problemas de Autenticação**
+##  **Problemas de Autenticação**
 
 ### **JWT Token inválido**
 
@@ -273,7 +273,7 @@ import Image from 'next/image';
 
 ---
 
-## 🧪 **Problemas de Testes**
+##  **Problemas de Testes**
 
 ### **Testes falhando**
 
@@ -300,7 +300,7 @@ module.exports = {
 
 ---
 
-## 📱 **Problemas de Deploy**
+##  **Problemas de Deploy**
 
 ### **Deploy falha no Vercel**
 
@@ -329,7 +329,7 @@ heroku logs --tail
 
 ---
 
-## 🔍 **Ferramentas de Debug**
+##  **Ferramentas de Debug**
 
 ### **Backend (.NET)**
 
@@ -402,14 +402,14 @@ console.groupEnd();
 
 ---
 
-## 📞 **Quando Buscar Ajuda**
+##  **Quando Buscar Ajuda**
 
 ### **Antes de abrir uma issue:**
 
-1. ✅ Verificar se o problema está neste guia
-2. ✅ Consultar a documentação oficial
-3. ✅ Verificar issues existentes no GitHub
-4. ✅ Reproduzir o problema em ambiente limpo
+1.  Verificar se o problema está neste guia
+2.  Consultar a documentação oficial
+3.  Verificar issues existentes no GitHub
+4.  Reproduzir o problema em ambiente limpo
 
 ### **Informações para incluir:**
 
@@ -421,13 +421,13 @@ console.groupEnd();
 
 ### **Canais de suporte:**
 
-- 📧 **Email**: mateus.orlando@unb.br
-- 🐛 **GitHub Issues**: [Abrir issue](https://github.com/MateusOrlando/SpendWise/issues)
-- 📖 **Documentação**: [Docs online](https://mateusorlando.github.io/SpendWise-Docs)
+-  **Email**: mateus.orlando@unb.br
+-  **GitHub Issues**: [Abrir issue](https://github.com/MateusOrlando/SpendWise/issues)
+-  **Documentação**: [Docs online](https://mateusorlando.github.io/SpendWise-Docs)
 
 ---
 
-## ⚡ **Dicas de Performance**
+##  **Dicas de Performance**
 
 ### **Desenvolvimento mais rápido**
 
@@ -457,5 +457,5 @@ SELECT * FROM pg_stat_activity;
 
 ---
 
-*💡 **Dica**: Mantenha sempre suas dependências atualizadas e faça backups regulares do banco de dados antes de grandes mudanças.*
+* **Dica**: Mantenha sempre suas dependências atualizadas e faça backups regulares do banco de dados antes de grandes mudanças.*
 

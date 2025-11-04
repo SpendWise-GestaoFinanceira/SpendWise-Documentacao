@@ -116,43 +116,43 @@ O frontend do SpendWise é uma aplicação web moderna construída com Next.js 1
 
 ```
 MateusOrlando-TPPE-2025.2-Frontend/
-├── app/                          # App Router do Next.js
-│   ├── (app)/                   # Grupo de rotas autenticadas
-│   │   ├── categorias/          # Gestão de categorias
-│   │   ├── dashboard/           # Dashboard principal
-│   │   ├── fechamento/          # Fechamento mensal
-│   │   ├── orcamento/           # Gestão de orçamento
-│   │   ├── perfil/              # Perfil do usuário
-│   │   ├── relatorios/          # Relatórios e análises
-│   │   ├── transacoes/          # Gestão de transações
-│   │   └── layout.tsx           # Layout com sidebar
-│   ├── (auth)/                  # Grupo de rotas de autenticação
-│   │   ├── login/               # Página de login
-│   │   ├── register/            # Página de registro
-│   │   ├── esqueci-senha/       # Recuperação de senha
-│   │   ├── redefinir-senha/     # Redefinição de senha
-│   │   └── layout.tsx           # Layout de autenticação
-│   ├── api/                     # API Routes
-│   │   └── auth/                # Endpoints NextAuth
-│   ├── demo/                    # Modo demonstração
-│   ├── layout.tsx               # Layout raiz
-│   └── page.tsx                 # Landing page
-├── components/                   # Componentes React
-│   ├── ui/                      # Componentes shadcn/ui
-│   ├── charts/                  # Componentes de gráficos
-│   ├── categories/              # Componentes de categorias
-│   ├── transactions/            # Componentes de transações
-│   ├── budget/                  # Componentes de orçamento
-│   ├── closure/                 # Componentes de fechamento
-│   ├── reports/                 # Componentes de relatórios
-│   └── auth/                    # Componentes de autenticação
-├── hooks/                        # Custom React Hooks
-├── lib/                          # Utilitários e configurações
-├── contexts/                     # Contextos globais
-├── e2e/                         # Testes end-to-end
-├── __tests__/                   # Testes unitários
-├── public/                      # Arquivos estáticos
-└── styles/                      # Estilos globais
+ app/                          # App Router do Next.js
+    (app)/                   # Grupo de rotas autenticadas
+       categorias/          # Gestão de categorias
+       dashboard/           # Dashboard principal
+       fechamento/          # Fechamento mensal
+       orcamento/           # Gestão de orçamento
+       perfil/              # Perfil do usuário
+       relatorios/          # Relatórios e análises
+       transacoes/          # Gestão de transações
+       layout.tsx           # Layout com sidebar
+    (auth)/                  # Grupo de rotas de autenticação
+       login/               # Página de login
+       register/            # Página de registro
+       esqueci-senha/       # Recuperação de senha
+       redefinir-senha/     # Redefinição de senha
+       layout.tsx           # Layout de autenticação
+    api/                     # API Routes
+       auth/                # Endpoints NextAuth
+    demo/                    # Modo demonstração
+    layout.tsx               # Layout raiz
+    page.tsx                 # Landing page
+ components/                   # Componentes React
+    ui/                      # Componentes shadcn/ui
+    charts/                  # Componentes de gráficos
+    categories/              # Componentes de categorias
+    transactions/            # Componentes de transações
+    budget/                  # Componentes de orçamento
+    closure/                 # Componentes de fechamento
+    reports/                 # Componentes de relatórios
+    auth/                    # Componentes de autenticação
+ hooks/                        # Custom React Hooks
+ lib/                          # Utilitários e configurações
+ contexts/                     # Contextos globais
+ e2e/                         # Testes end-to-end
+ __tests__/                   # Testes unitários
+ public/                      # Arquivos estáticos
+ styles/                      # Estilos globais
 ```
 
 ### Padrões Arquiteturais

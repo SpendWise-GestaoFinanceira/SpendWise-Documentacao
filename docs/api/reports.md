@@ -1,4 +1,4 @@
-﻿# API - Relatórios
+# API - Relatórios
 
 ## **Endpoints de Relatórios**
 
@@ -212,7 +212,7 @@ Content-Type: application/json
 
 ---
 
-## 📅 **GET /api/relatorios/mensal**
+##  **GET /api/relatorios/mensal**
 
 Relatório mensal detalhado.
 
@@ -598,7 +598,7 @@ Content-Type: application/json
 
 ---
 
-## 📥 **GET /api/relatorios/{id}/download**
+##  **GET /api/relatorios/{id}/download**
 
 Faz download de relatório gerado.
 
@@ -620,7 +620,7 @@ Content-Disposition: attachment; filename="relatorio_janeiro_2024.pdf"
 
 ---
 
-## 📝 **Códigos de Erro**
+##  **Códigos de Erro**
 
 | Código | Descrição |
 |--------|-----------|
@@ -632,7 +632,7 @@ Content-Disposition: attachment; filename="relatorio_janeiro_2024.pdf"
 
 ---
 
-## 🧪 **Exemplos de Uso**
+##  **Exemplos de Uso**
 
 ### **cURL - Dashboard**
 ```bash

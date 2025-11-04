@@ -10,9 +10,7 @@ hide:
   <h3>Sistema de gestão financeira pessoal com Clean Architecture, DDD e Next.js</h3>
 
   <div class="hero-buttons">
-    <a href="guides/setup.html" class="md-button md-button--primary">Começar Agora</a>
-    <a href="overview/about.html" class="md-button">Documentação</a>
-    <a href="https://github.com/MateusOrlando/SpendWise" class="md-button">GitHub</a>
+    <a href="https://github.com/orgs/SpendWise-GestaoFinanceira/repositories" class="md-button">GitHub</a>
   </div>
 
 </div>
@@ -25,29 +23,44 @@ hide:
 
 <ul>
   <li>
+    <strong>Especificações</strong>
+    <p>User Stories e Regras de Negócio do sistema</p>
+    <a href="specs/user-stories/">Acessar →</a>
+  </li>
+  <li>
     <strong>Visão Geral</strong>
     <p>Introdução à arquitetura e motivação do projeto</p>
-    <a href="overview/about.html">Acessar →</a>
+    <a href="overview/about/">Acessar →</a>
   </li>
   <li>
     <strong>Backend</strong>
-    <p>ASP.NET Core — Domain, Application, Infra e API</p>
-    <a href="backend/index.html">Acessar →</a>
+    <p>ASP.NET Core — Clean Architecture, DDD e Testes</p>
+    <a href="backend/">Acessar →</a>
   </li>
   <li>
     <strong>Frontend</strong>
-    <p>Next.js + Tailwind + Radix UI</p>
-    <a href="frontend/index.html">Acessar →</a>
+    <p>Next.js + Tailwind + Radix UI + TypeScript</p>
+    <a href="frontend/">Acessar →</a>
   </li>
   <li>
     <strong>Docker & DevOps</strong>
-    <p>Execução local e em produção com Docker & CI/CD</p>
-    <a href="docker/index.html">Acessar →</a>
+    <p>Containerização e CI/CD com GitHub Actions</p>
+    <a href="docker/">Acessar →</a>
   </li>
   <li>
     <strong>API</strong>
-    <p>Endpoints e exemplos de uso</p>
-    <a href="api/auth.html">Acessar →</a>
+    <p>Documentação completa dos endpoints REST</p>
+    <a href="api/auth/">Acessar →</a>
+  </li>
+  <li>
+    <strong>Diagramas</strong>
+    <p>Arquitetura, DER, Modelo de Dados e Classes</p>
+    <a href="diagrams/">Acessar →</a>
+  </li>
+  <li>
+    <strong>Guias</strong>
+    <p>Setup, Contribuição e Troubleshooting</p>
+    <a href="guides/setup/">Acessar →</a>
   </li>
 </ul>
 
@@ -55,6 +68,6 @@ hide:
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Mateus Orlando Medeiros Ribeiro

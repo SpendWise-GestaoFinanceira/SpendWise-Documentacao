@@ -4,7 +4,7 @@
 
 O SpendWise implementa uma arquitetura moderna baseada em **Clean Architecture**, **Domain-Driven Design (DDD)** e **CQRS**, garantindo separação clara de responsabilidades e alta testabilidade.
 
-## 📐 **Clean Architecture**
+##  **Clean Architecture**
 
 ### **Camadas da Arquitetura**
 
@@ -143,43 +143,43 @@ public class CreateTransacaoCommandHandler : IRequestHandler<CreateTransacaoComm
 ### **Domain Layer**
 ```
 SpendWise.Domain/
-├── Entities/           # Entidades de negócio
-├── ValueObjects/       # Objetos de valor
-├── Interfaces/         # Contratos do domínio
-├── Enums/             # Enumerações
-├── Exceptions/        # Exceções de domínio
-└── Utils/             # Utilitários
+ Entities/           # Entidades de negócio
+ ValueObjects/       # Objetos de valor
+ Interfaces/         # Contratos do domínio
+ Enums/             # Enumerações
+ Exceptions/        # Exceções de domínio
+ Utils/             # Utilitários
 ```
 
 ### **Application Layer**
 ```
 SpendWise.Application/
-├── Commands/          # Comandos CQRS
-├── Queries/           # Consultas CQRS
-├── Handlers/          # Handlers CQRS
-├── DTOs/              # Data Transfer Objects
-├── Validators/        # Validações
-├── Services/          # Serviços de aplicação
-└── Mappings/          # Mapeamentos AutoMapper
+ Commands/          # Comandos CQRS
+ Queries/           # Consultas CQRS
+ Handlers/          # Handlers CQRS
+ DTOs/              # Data Transfer Objects
+ Validators/        # Validações
+ Services/          # Serviços de aplicação
+ Mappings/          # Mapeamentos AutoMapper
 ```
 
 ### **Infrastructure Layer**
 ```
 SpendWise.Infrastructure/
-├── Data/              # Entity Framework
-├── Repositories/      # Implementações de repositórios
-├── Services/          # Serviços externos
-├── Configurations/    # Configurações EF
-└── Migrations/        # Migrações do banco
+ Data/              # Entity Framework
+ Repositories/      # Implementações de repositórios
+ Services/          # Serviços externos
+ Configurations/    # Configurações EF
+ Migrations/        # Migrações do banco
 ```
 
 ### **API Layer**
 ```
 SpendWise.API/
-├── Controllers/       # Controllers REST
-├── Middleware/        # Middleware customizado
-├── Extensions/        # Extensões
-└── Program.cs         # Configuração da aplicação
+ Controllers/       # Controllers REST
+ Middleware/        # Middleware customizado
+ Extensions/        # Extensões
+ Program.cs         # Configuração da aplicação
 ```
 
 ## **Fluxo de Dados**
@@ -229,7 +229,7 @@ sequenceDiagram
     M-->>C: List<TransacaoDto>
 ```
 
-## 🧪 **Testabilidade**
+##  **Testabilidade**
 
 ### **Estratégia de Testes**
 

@@ -13,32 +13,32 @@ A camada de infraestrutura contém implementações concretas de interfaces defi
 
 ```
 SpendWise.Infrastructure/
-├── Data/
-│   ├── ApplicationDbContext.cs
-│   ├── Configurations/
-│   │   ├── UsuarioConfiguration.cs
-│   │   ├── CategoriaConfiguration.cs
-│   │   ├── TransacaoConfiguration.cs
-│   │   ├── OrcamentoMensalConfiguration.cs
-│   │   ├── FechamentoMensalConfiguration.cs
-│   │   └── MetaConfiguration.cs
-│   └── Migrations/
-├── Repositories/
-│   ├── Repository.cs
-│   ├── UsuarioRepository.cs
-│   ├── CategoriaRepository.cs
-│   ├── TransacaoRepository.cs
-│   ├── OrcamentoMensalRepository.cs
-│   ├── FechamentoMensalRepository.cs
-│   ├── MetaRepository.cs
-│   └── UnitOfWork.cs
-└── Services/
-    ├── JwtService.cs
-    ├── PasswordHasher.cs
-    ├── TokenService.cs
-    ├── MockEmailService.cs
-    ├── BrevoEmailService.cs
-    └── InMemoryCacheService.cs
+ Data/
+    ApplicationDbContext.cs
+    Configurations/
+       UsuarioConfiguration.cs
+       CategoriaConfiguration.cs
+       TransacaoConfiguration.cs
+       OrcamentoMensalConfiguration.cs
+       FechamentoMensalConfiguration.cs
+       MetaConfiguration.cs
+    Migrations/
+ Repositories/
+    Repository.cs
+    UsuarioRepository.cs
+    CategoriaRepository.cs
+    TransacaoRepository.cs
+    OrcamentoMensalRepository.cs
+    FechamentoMensalRepository.cs
+    MetaRepository.cs
+    UnitOfWork.cs
+ Services/
+     JwtService.cs
+     PasswordHasher.cs
+     TokenService.cs
+     MockEmailService.cs
+     BrevoEmailService.cs
+     InMemoryCacheService.cs
 ```
 
 ## Entity Framework Core

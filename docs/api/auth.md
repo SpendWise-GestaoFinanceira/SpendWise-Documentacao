@@ -1,6 +1,6 @@
-﻿# API - Autenticação
+# API - Autenticação
 
-## 🔐 **Visão Geral**
+##  **Visão Geral**
 
 A API de autenticação do SpendWise utiliza JWT (JSON Web Tokens) para autenticação stateless, garantindo segurança e escalabilidade.
 
@@ -181,7 +181,7 @@ curl -X GET http://localhost:5000/api/usuarios/profile \
 
 ---
 
-## 🔒 **Autenticação**
+##  **Autenticação**
 
 ### **JWT Token**
 
@@ -219,7 +219,7 @@ Authorization: Bearer <token>
 - **Access Token**: 24 horas
 - **Refresh Token**: 7 dias (quando implementado)
 
-## 🛡️ **Segurança**
+##  **Segurança**
 
 ### **Validações**
 
@@ -244,7 +244,7 @@ Authorization: Bearer <token>
 - **Register**: 3 tentativas por minuto por IP
 - **API**: 100 requisições por minuto por usuário
 
-## 📝 **Códigos de Status**
+##  **Códigos de Status**
 
 | Código | Descrição |
 |--------|-----------|
@@ -256,7 +256,7 @@ Authorization: Bearer <token>
 | 404 | Não encontrado |
 | 500 | Erro interno do servidor |
 
-## 🧪 **Exemplos de Uso**
+##  **Exemplos de Uso**
 
 ### **JavaScript/TypeScript**
 
@@ -341,7 +341,7 @@ curl -X GET http://localhost:5000/api/usuarios/profile \
   -H "Authorization: Bearer $TOKEN"
 ```
 
-## 🚨 **Tratamento de Erros**
+##  **Tratamento de Erros**
 
 ### **Erros Comuns**
 
@@ -390,7 +390,7 @@ curl -X GET http://localhost:5000/api/usuarios/profile \
 
 ---
 
-## 🆘 **Suporte**
+##  **Suporte**
 
 Para problemas ou dúvidas:
 
