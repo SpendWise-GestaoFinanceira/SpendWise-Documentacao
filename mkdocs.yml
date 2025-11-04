@@ -43,8 +43,37 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Visão Geral: overview/about.md
-  - Backend: backend/index.md
-  - Frontend: frontend/index.md
+  - Visão Geral:
+    - Sobre o Projeto: overview/about.md
+    - Arquitetura: overview/architecture.md
+    - Tecnologias: overview/technologies.md
+  - Backend:
+    - Introdução: backend/index.md
+    - Clean Architecture: backend/clean-architecture.md
+    - Domain Layer: backend/domain.md
+    - Application Layer: backend/application.md
+    - Infrastructure Layer: backend/infrastructure.md
+    - API Layer: backend/api.md
+    - Testes: backend/testes.md
+  - Frontend:
+    - Introdução: frontend/index.md
+    - Arquitetura: frontend/arquitetura.md
+    - Componentes: frontend/componentes.md
+    - Integração API: frontend/api-integration.md
+    - Testes: frontend/testes.md
   - Docker & DevOps: docker/index.md
-  - API: api/auth.md
+  - API:
+    - Autenticação: api/auth.md
+    - Usuários: api/users.md
+    - Categorias: api/categories.md
+    - Transações: api/transactions.md
+    - Relatórios: api/reports.md
+  - Guias:
+    - Setup: guides/setup.md
+    - Contribuindo: guides/contributing.md
+    - Troubleshooting: guides/troubleshooting.md
+  - Diagramas:
+    - Visão Geral: diagrams/index.md
+    - Arquitetura: diagrams/architecture.md
+    - Modelo de Dados: diagrams/data-model.md
+    - MER: diagrams/MER-SpendWise.md
