@@ -38,6 +38,11 @@ hide:
     <a href="backend/">Acessar →</a>
   </li>
   <li>
+    <strong>SpendWise Auth</strong>
+    <p>Microserviço de Autenticação — CQRS e JWT</p>
+    <a href="auth-service/">Acessar →</a>
+  </li>
+  <li>
     <strong>Frontend</strong>
     <p>Next.js + Tailwind + Radix UI + TypeScript</p>
     <a href="frontend/">Acessar →</a>

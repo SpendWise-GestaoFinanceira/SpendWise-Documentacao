@@ -66,6 +66,10 @@ nav:
     - API Layer: backend/api.md
     - Testes: backend/testes.md
     - Backlog: backend/backlog.md
+  - SpendWise Auth:
+    - Introdução: auth-service/index.md
+    - Arquitetura: auth-service/architecture.md
+    - Integração Frontend: auth-service/frontend-integration.md
   - Frontend:
     - Introdução: frontend/index.md
     - Arquitetura: frontend/arquitetura.md
