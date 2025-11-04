@@ -1,15 +1,19 @@
 site_name: SpendWise-Documentacao
+site_url: https://spendwise-gestaofinanceira.github.io/SpendWise-Documentacao/
+
 theme:
   name: material
+  language: pt-BR
   font:
     text: Inter
     code: JetBrains Mono
   features:
-    - navigation.instant
     - navigation.tabs
     - navigation.sections
-    - content.code.copy
     - navigation.top
+    - navigation.tracking
+    - content.code.copy
+    - content.code.annotate
     - search.suggest
     - search.highlight
   palette:
@@ -18,13 +22,13 @@ theme:
       accent: sky
       toggle:
         icon: material/brightness-7
-        name: Modo escuro
+        name: Alternar para modo escuro
     - scheme: slate
       primary: emerald
       accent: sky
       toggle:
         icon: material/brightness-4
-        name: Modo claro
+        name: Alternar para modo claro
 
 extra_css:
   - assets/stylesheets/extra.css
