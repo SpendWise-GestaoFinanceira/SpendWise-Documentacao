@@ -1,0 +1,3310 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://spendwise-gestaofinanceira.github.io/SpendWise-Documentacao/overview/technologies/">
+      
+      
+        <link rel="prev" href="../architecture/">
+      
+      
+        <link rel="next" href="../../specs/user-stories/">
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Tecnologias - SpendWise-Documentacao</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tecnologias-utilizadas" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="SpendWise-Documentacao" class="md-header__button md-logo" aria-label="SpendWise-Documentacao" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SpendWise-Documentacao
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tecnologias
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../about/" class="md-tabs__link">
+          
+  
+  
+  Visão Geral
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../specs/user-stories/" class="md-tabs__link">
+          
+  
+  
+  Especificações
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../backend/" class="md-tabs__link">
+          
+  
+  
+  Backend
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../auth-service/" class="md-tabs__link">
+          
+  
+  
+  SpendWise Auth
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../frontend/" class="md-tabs__link">
+          
+  
+  
+  Frontend
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../docker/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Docker & DevOps
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../api/auth/" class="md-tabs__link">
+          
+  
+  
+  API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guides/setup/" class="md-tabs__link">
+          
+  
+  
+  Guias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../diagrams/" class="md-tabs__link">
+          
+  
+  
+  Diagramas
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SpendWise-Documentacao" class="md-nav__button md-logo" aria-label="SpendWise-Documentacao" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    SpendWise-Documentacao
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Visão Geral
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Geral
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sobre o Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Tecnologias
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tecnologias
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stack-tecnologico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Tecnológico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backend-net-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend (.NET 8)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backend (.NET 8)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aspnet-core-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ASP.NET Core 8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity-framework-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entity Framework Core
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      PostgreSQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediatr" class="md-nav__link">
+    <span class="md-ellipsis">
+      MediatR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluentvalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      FluentValidation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automapper" class="md-nav__link">
+    <span class="md-ellipsis">
+      AutoMapper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serilog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serilog
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend-nextjs-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend (Next.js 14)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frontend (Next.js 14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nextjs-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next.js 14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      TypeScript
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tailwind-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tailwind CSS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radix-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radix UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react-hook-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      React Hook Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recharts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recharts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops-infraestrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps &amp; Infraestrutura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DevOps &amp; Infraestrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nginx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-qualidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testes &amp; Qualidade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testes &amp; Qualidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xunit" class="md-nav__link">
+    <span class="md-ellipsis">
+      xUnit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluentassertions" class="md-nav__link">
+    <span class="md-ellipsis">
+      FluentAssertions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moq" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moq
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testcontainers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testcontainers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playwright" class="md-nav__link">
+    <span class="md-ellipsis">
+      Playwright
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoramento-observabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoramento &amp; Observabilidade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoramento &amp; Observabilidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serilog_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serilog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Health Checks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structured-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structured Logging
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segurança
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Segurança">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jwt-json-web-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      JWT (JSON Web Tokens)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bcrypt" class="md-nav__link">
+    <span class="md-ellipsis">
+      BCrypt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTPS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rate-limiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rate Limiting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Async/Await
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-pooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Pooling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caching
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdn" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDN
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-de-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de Desenvolvimento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ferramentas de Desenvolvimento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Studio Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eslint" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESLint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prettier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prettier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliotecas-de-apoio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliotecas de Apoio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bibliotecas de Apoio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-escolha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Escolha
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Escolha">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#produtividade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Produtividade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manutenibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manutenibilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximas-tecnologias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximas Tecnologias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Próximas Tecnologias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planejadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planejadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#em-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Em Avaliação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Especificações
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Especificações
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../specs/user-stories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../specs/business-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Negócio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Backend
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Backend
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/clean-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/domain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Domain Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/application/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Application Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Infrastructure Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    SpendWise Auth
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            SpendWise Auth
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-service/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-service/frontend-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integração Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Frontend
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/componentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/api-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integração API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker & DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usuários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Categorias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/transactions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guias
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contribuindo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Diagramas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Diagramas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visão Geral
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/data-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modelo de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/MER-SpendWise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MER
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stack-tecnologico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Tecnológico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backend-net-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend (.NET 8)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backend (.NET 8)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aspnet-core-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ASP.NET Core 8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity-framework-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entity Framework Core
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      PostgreSQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediatr" class="md-nav__link">
+    <span class="md-ellipsis">
+      MediatR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluentvalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      FluentValidation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automapper" class="md-nav__link">
+    <span class="md-ellipsis">
+      AutoMapper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serilog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serilog
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend-nextjs-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend (Next.js 14)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frontend (Next.js 14)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nextjs-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next.js 14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      TypeScript
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tailwind-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tailwind CSS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radix-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radix UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react-hook-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      React Hook Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recharts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recharts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops-infraestrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps &amp; Infraestrutura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DevOps &amp; Infraestrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nginx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-qualidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testes &amp; Qualidade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testes &amp; Qualidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xunit" class="md-nav__link">
+    <span class="md-ellipsis">
+      xUnit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluentassertions" class="md-nav__link">
+    <span class="md-ellipsis">
+      FluentAssertions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moq" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moq
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testcontainers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testcontainers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playwright" class="md-nav__link">
+    <span class="md-ellipsis">
+      Playwright
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoramento-observabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoramento &amp; Observabilidade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoramento &amp; Observabilidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#serilog_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serilog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Health Checks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structured-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structured Logging
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segurança
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Segurança">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jwt-json-web-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      JWT (JSON Web Tokens)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bcrypt" class="md-nav__link">
+    <span class="md-ellipsis">
+      BCrypt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTPS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rate-limiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rate Limiting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Async/Await
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-pooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Pooling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caching
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdn" class="md-nav__link">
+    <span class="md-ellipsis">
+      CDN
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-de-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de Desenvolvimento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ferramentas de Desenvolvimento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Studio Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eslint" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESLint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prettier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prettier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliotecas-de-apoio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliotecas de Apoio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bibliotecas de Apoio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-escolha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Escolha
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Escolha">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#produtividade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Produtividade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manutenibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manutenibilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximas-tecnologias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximas Tecnologias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Próximas Tecnologias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planejadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planejadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#em-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Em Avaliação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tecnologias-utilizadas">Tecnologias Utilizadas</h1>
+<h2 id="stack-tecnologico"><strong>Stack Tecnológico</strong></h2>
+<p>O SpendWise utiliza uma stack moderna e robusta, combinando as melhores tecnologias disponíveis para desenvolvimento web.</p>
+<h2 id="backend-net-8"><strong>Backend (.NET 8)</strong></h2>
+<h3 id="aspnet-core-8"><strong>ASP.NET Core 8</strong></h3>
+<ul>
+<li><strong>Framework</strong>: Web API moderna e performática</li>
+<li><strong>Características</strong>: Cross-platform, async/await, dependency injection</li>
+<li><strong>Versão</strong>: 8.0 (LTS)</li>
+<li><strong>Benefícios</strong>: Alta performance, segurança, escalabilidade</li>
+</ul>
+<h3 id="entity-framework-core"><strong>Entity Framework Core</strong></h3>
+<ul>
+<li><strong>ORM</strong>: Mapeamento objeto-relacional</li>
+<li><strong>Características</strong>: Code First, Migrations, LINQ</li>
+<li><strong>Versão</strong>: 8.0</li>
+<li><strong>Benefícios</strong>: Produtividade, type safety, migrations automáticas</li>
+</ul>
+<h3 id="postgresql"><strong>PostgreSQL</strong></h3>
+<ul>
+<li><strong>Banco de Dados</strong>: Relacional robusto</li>
+<li><strong>Características</strong>: ACID, JSON support, full-text search</li>
+<li><strong>Versão</strong>: 15+</li>
+<li><strong>Benefícios</strong>: Confiabilidade, performance, recursos avançados</li>
+</ul>
+<h3 id="mediatr"><strong>MediatR</strong></h3>
+<ul>
+<li><strong>Padrão</strong>: Mediator para CQRS</li>
+<li><strong>Características</strong>: Desacoplamento, testabilidade</li>
+<li><strong>Versão</strong>: 12.0</li>
+<li><strong>Benefícios</strong>: Separação de responsabilidades, fácil teste</li>
+</ul>
+<h3 id="fluentvalidation"><strong>FluentValidation</strong></h3>
+<ul>
+<li><strong>Validação</strong>: Validações declarativas</li>
+<li><strong>Características</strong>: Fluent API, custom validators</li>
+<li><strong>Versão</strong>: 11.0</li>
+<li><strong>Benefícios</strong>: Validações robustas, mensagens customizadas</li>
+</ul>
+<h3 id="automapper"><strong>AutoMapper</strong></h3>
+<ul>
+<li><strong>Mapeamento</strong>: Objeto para objeto</li>
+<li><strong>Características</strong>: Performance, configuração flexível</li>
+<li><strong>Versão</strong>: 12.0</li>
+<li><strong>Benefícios</strong>: Redução de código boilerplate</li>
+</ul>
+<h3 id="serilog"><strong>Serilog</strong></h3>
+<ul>
+<li><strong>Logging</strong>: Logs estruturados</li>
+<li><strong>Características</strong>: Structured logging, sinks</li>
+<li><strong>Versão</strong>: 3.0</li>
+<li><strong>Benefícios</strong>: Logs organizados, fácil análise</li>
+</ul>
+<h2 id="frontend-nextjs-14"><strong>Frontend (Next.js 14)</strong></h2>
+<h3 id="nextjs-14"><strong>Next.js 14</strong></h3>
+<ul>
+<li><strong>Framework</strong>: React com App Router</li>
+<li><strong>Características</strong>: SSR, SSG, ISR, API Routes</li>
+<li><strong>Versão</strong>: 14.0</li>
+<li><strong>Benefícios</strong>: Performance, SEO, developer experience</li>
+</ul>
+<h3 id="typescript"><strong>TypeScript</strong></h3>
+<ul>
+<li><strong>Linguagem</strong>: JavaScript tipado</li>
+<li><strong>Características</strong>: Type safety, IntelliSense</li>
+<li><strong>Versão</strong>: 5.0</li>
+<li><strong>Benefícios</strong>: Menos bugs, melhor refactoring</li>
+</ul>
+<h3 id="tailwind-css"><strong>Tailwind CSS</strong></h3>
+<ul>
+<li><strong>CSS Framework</strong>: Utility-first</li>
+<li><strong>Características</strong>: Responsive, customizável</li>
+<li><strong>Versão</strong>: 3.0</li>
+<li><strong>Benefícios</strong>: Desenvolvimento rápido, consistência</li>
+</ul>
+<h3 id="radix-ui"><strong>Radix UI</strong></h3>
+<ul>
+<li><strong>Componentes</strong>: Acessíveis e customizáveis</li>
+<li><strong>Características</strong>: Headless, acessibilidade</li>
+<li><strong>Versão</strong>: 1.0</li>
+<li><strong>Benefícios</strong>: Acessibilidade, customização</li>
+</ul>
+<h3 id="react-hook-form"><strong>React Hook Form</strong></h3>
+<ul>
+<li><strong>Formulários</strong>: Gerenciamento performático</li>
+<li><strong>Características</strong>: Validação, performance</li>
+<li><strong>Versão</strong>: 7.0</li>
+<li><strong>Benefícios</strong>: Menos re-renders, validação integrada</li>
+</ul>
+<h3 id="recharts"><strong>Recharts</strong></h3>
+<ul>
+<li><strong>Gráficos</strong>: Visualizações interativas</li>
+<li><strong>Características</strong>: Responsive, customizável</li>
+<li><strong>Versão</strong>: 2.0</li>
+<li><strong>Benefícios</strong>: Gráficos modernos, fácil uso</li>
+</ul>
+<h2 id="devops-infraestrutura"><strong>DevOps &amp; Infraestrutura</strong></h2>
+<h3 id="docker"><strong>Docker</strong></h3>
+<ul>
+<li><strong>Containerização</strong>: Aplicações isoladas</li>
+<li><strong>Características</strong>: Multi-stage builds, health checks</li>
+<li><strong>Versão</strong>: 24.0</li>
+<li><strong>Benefícios</strong>: Consistência, portabilidade</li>
+</ul>
+<h3 id="docker-compose"><strong>Docker Compose</strong></h3>
+<ul>
+<li><strong>Orquestração</strong>: Multi-container applications</li>
+<li><strong>Características</strong>: Development, production configs</li>
+<li><strong>Versão</strong>: 2.0</li>
+<li><strong>Benefícios</strong>: Facilidade de setup, ambientes isolados</li>
+</ul>
+<h3 id="nginx"><strong>Nginx</strong></h3>
+<ul>
+<li><strong>Reverse Proxy</strong>: Load balancing, SSL</li>
+<li><strong>Características</strong>: High performance, configuração flexível</li>
+<li><strong>Versão</strong>: 1.24</li>
+<li><strong>Benefícios</strong>: Performance, segurança</li>
+</ul>
+<h3 id="github-actions"><strong>GitHub Actions</strong></h3>
+<ul>
+<li><strong>CI/CD</strong>: Automação de pipelines</li>
+<li><strong>Características</strong>: Workflows, matrix builds</li>
+<li><strong>Versão</strong>: Latest</li>
+<li><strong>Benefícios</strong>: Integração contínua, deploy automático</li>
+</ul>
+<h2 id="testes-qualidade"><strong>Testes &amp; Qualidade</strong></h2>
+<h3 id="xunit"><strong>xUnit</strong></h3>
+<ul>
+<li><strong>Framework</strong>: Testes unitários</li>
+<li><strong>Características</strong>: Attributes, assertions</li>
+<li><strong>Versão</strong>: 2.0</li>
+<li><strong>Benefícios</strong>: Padrão .NET, fácil uso</li>
+</ul>
+<h3 id="fluentassertions"><strong>FluentAssertions</strong></h3>
+<ul>
+<li><strong>Assertions</strong>: Sintaxe fluente</li>
+<li><strong>Características</strong>: Readable tests, extensível</li>
+<li><strong>Versão</strong>: 6.0</li>
+<li><strong>Benefícios</strong>: Testes mais legíveis</li>
+</ul>
+<h3 id="moq"><strong>Moq</strong></h3>
+<ul>
+<li><strong>Mocking</strong>: Mocks e stubs</li>
+<li><strong>Características</strong>: Type-safe, configuração flexível</li>
+<li><strong>Versão</strong>: 4.0</li>
+<li><strong>Benefícios</strong>: Isolamento de dependências</li>
+</ul>
+<h3 id="testcontainers"><strong>Testcontainers</strong></h3>
+<ul>
+<li><strong>Testes de Integração</strong>: Containers para testes</li>
+<li><strong>Características</strong>: Real databases, cleanup automático</li>
+<li><strong>Versão</strong>: 3.0</li>
+<li><strong>Benefícios</strong>: Testes mais realistas</li>
+</ul>
+<h3 id="playwright"><strong>Playwright</strong></h3>
+<ul>
+<li><strong>E2E Testing</strong>: Testes end-to-end</li>
+<li><strong>Características</strong>: Multi-browser, auto-wait</li>
+<li><strong>Versão</strong>: 1.0</li>
+<li><strong>Benefícios</strong>: Testes de UI robustos</li>
+</ul>
+<h2 id="monitoramento-observabilidade"><strong>Monitoramento &amp; Observabilidade</strong></h2>
+<h3 id="serilog_1"><strong>Serilog</strong></h3>
+<ul>
+<li><strong>Logging</strong>: Logs estruturados</li>
+<li><strong>Sinks</strong>: Console, File, Database</li>
+<li><strong>Benefícios</strong>: Debugging, análise de performance</li>
+</ul>
+<h3 id="health-checks"><strong>Health Checks</strong></h3>
+<ul>
+<li><strong>Monitoramento</strong>: Status da aplicação</li>
+<li><strong>Características</strong>: Database, external services</li>
+<li><strong>Benefícios</strong>: Detecção de problemas</li>
+</ul>
+<h3 id="structured-logging"><strong>Structured Logging</strong></h3>
+<ul>
+<li><strong>Formato</strong>: JSON logs</li>
+<li><strong>Características</strong>: Correlação, análise</li>
+<li><strong>Benefícios</strong>: Troubleshooting eficiente</li>
+</ul>
+<h2 id="seguranca"><strong>Segurança</strong></h2>
+<h3 id="jwt-json-web-tokens"><strong>JWT (JSON Web Tokens)</strong></h3>
+<ul>
+<li><strong>Autenticação</strong>: Stateless authentication</li>
+<li><strong>Características</strong>: Self-contained, secure</li>
+<li><strong>Benefícios</strong>: Escalabilidade, segurança</li>
+</ul>
+<h3 id="bcrypt"><strong>BCrypt</strong></h3>
+<ul>
+<li><strong>Hashing</strong>: Senhas seguras</li>
+<li><strong>Características</strong>: Salt automático, slow hashing</li>
+<li><strong>Benefícios</strong>: Proteção contra ataques</li>
+</ul>
+<h3 id="https"><strong>HTTPS</strong></h3>
+<ul>
+<li><strong>Criptografia</strong>: Comunicação segura</li>
+<li><strong>Características</strong>: TLS 1.3, certificados</li>
+<li><strong>Benefícios</strong>: Proteção de dados</li>
+</ul>
+<h3 id="rate-limiting"><strong>Rate Limiting</strong></h3>
+<ul>
+<li><strong>Proteção</strong>: Ataques de força bruta</li>
+<li><strong>Características</strong>: Por IP, por usuário</li>
+<li><strong>Benefícios</strong>: Prevenção de abuso</li>
+</ul>
+<h2 id="performance"><strong>Performance</strong></h2>
+<h3 id="asyncawait"><strong>Async/Await</strong></h3>
+<ul>
+<li><strong>Concorrência</strong>: Operações não-bloqueantes</li>
+<li><strong>Benefícios</strong>: Melhor utilização de recursos</li>
+</ul>
+<h3 id="connection-pooling"><strong>Connection Pooling</strong></h3>
+<ul>
+<li><strong>Database</strong>: Reutilização de conexões</li>
+<li><strong>Benefícios</strong>: Performance, escalabilidade</li>
+</ul>
+<h3 id="caching"><strong>Caching</strong></h3>
+<ul>
+<li><strong>Memória</strong>: Dados frequentemente acessados</li>
+<li><strong>Características</strong>: In-memory, distributed</li>
+<li><strong>Benefícios</strong>: Redução de latência</li>
+</ul>
+<h3 id="cdn"><strong>CDN</strong></h3>
+<ul>
+<li><strong>Assets</strong>: Entrega global</li>
+<li><strong>Características</strong>: Edge locations</li>
+<li><strong>Benefícios</strong>: Performance global</li>
+</ul>
+<h2 id="ferramentas-de-desenvolvimento"><strong>Ferramentas de Desenvolvimento</strong></h2>
+<h3 id="visual-studio-code"><strong>Visual Studio Code</strong></h3>
+<ul>
+<li><strong>IDE</strong>: Editor moderno</li>
+<li><strong>Extensions</strong>: C#, TypeScript, Docker</li>
+<li><strong>Benefícios</strong>: Produtividade, integração</li>
+</ul>
+<h3 id="git"><strong>Git</strong></h3>
+<ul>
+<li><strong>Version Control</strong>: Controle de versão</li>
+<li><strong>Características</strong>: Branching, merging</li>
+<li><strong>Benefícios</strong>: Colaboração, histórico</li>
+</ul>
+<h3 id="eslint"><strong>ESLint</strong></h3>
+<ul>
+<li><strong>Linting</strong>: Qualidade de código</li>
+<li><strong>Características</strong>: Rules, auto-fix</li>
+<li><strong>Benefícios</strong>: Consistência, bugs</li>
+</ul>
+<h3 id="prettier"><strong>Prettier</strong></h3>
+<ul>
+<li><strong>Formatação</strong>: Código consistente</li>
+<li><strong>Características</strong>: Auto-format, configuração</li>
+<li><strong>Benefícios</strong>: Legibilidade, padronização</li>
+</ul>
+<h2 id="bibliotecas-de-apoio"><strong>Bibliotecas de Apoio</strong></h2>
+<h3 id="backend"><strong>Backend</strong></h3>
+<ul>
+<li><strong>FluentValidation</strong>: Validações</li>
+<li><strong>AutoMapper</strong>: Mapeamento</li>
+<li><strong>Serilog</strong>: Logging</li>
+<li><strong>MediatR</strong>: CQRS</li>
+<li><strong>Entity Framework</strong>: ORM</li>
+</ul>
+<h3 id="frontend"><strong>Frontend</strong></h3>
+<ul>
+<li><strong>React Hook Form</strong>: Formulários</li>
+<li><strong>Radix UI</strong>: Componentes</li>
+<li><strong>Tailwind CSS</strong>: Estilos</li>
+<li><strong>Recharts</strong>: Gráficos</li>
+<li><strong>Zustand</strong>: Estado</li>
+</ul>
+<h3 id="devops"><strong>DevOps</strong></h3>
+<ul>
+<li><strong>Docker</strong>: Containerização</li>
+<li><strong>Nginx</strong>: Reverse proxy</li>
+<li><strong>GitHub Actions</strong>: CI/CD</li>
+<li><strong>PostgreSQL</strong>: Database</li>
+</ul>
+<h2 id="criterios-de-escolha"><strong>Critérios de Escolha</strong></h2>
+<h3 id="performance_1"><strong>Performance</strong></h3>
+<ul>
+<li><strong>Backend</strong>: .NET 8 (alta performance)</li>
+<li><strong>Frontend</strong>: Next.js 14 (SSR/SSG)</li>
+<li><strong>Database</strong>: PostgreSQL (robusto)</li>
+</ul>
+<h3 id="produtividade"><strong>Produtividade</strong></h3>
+<ul>
+<li><strong>TypeScript</strong>: Type safety</li>
+<li><strong>AutoMapper</strong>: Redução de código</li>
+<li><strong>Tailwind</strong>: CSS rápido</li>
+</ul>
+<h3 id="escalabilidade"><strong>Escalabilidade</strong></h3>
+<ul>
+<li><strong>Docker</strong>: Containerização</li>
+<li><strong>CQRS</strong>: Separação de responsabilidades</li>
+<li><strong>Microservices</strong>: Preparação futura</li>
+</ul>
+<h3 id="manutenibilidade"><strong>Manutenibilidade</strong></h3>
+<ul>
+<li><strong>Clean Architecture</strong>: Separação clara</li>
+<li><strong>Tests</strong>: Cobertura alta</li>
+<li><strong>Documentation</strong>: Completa</li>
+</ul>
+<h2 id="proximas-tecnologias"><strong>Próximas Tecnologias</strong></h2>
+<h3 id="planejadas"><strong>Planejadas</strong></h3>
+<ul>
+<li><strong>Redis</strong>: Caching distribuído</li>
+<li><strong>Elasticsearch</strong>: Busca avançada</li>
+<li><strong>Kubernetes</strong>: Orquestração</li>
+<li><strong>Prometheus</strong>: Métricas</li>
+<li><strong>Grafana</strong>: Dashboards</li>
+</ul>
+<h3 id="em-avaliacao"><strong>Em Avaliação</strong></h3>
+<ul>
+<li><strong>gRPC</strong>: Comunicação interna</li>
+<li><strong>GraphQL</strong>: API flexível</li>
+<li><strong>WebSockets</strong>: Real-time</li>
+<li><strong>Machine Learning</strong>: Insights</li>
+</ul>
+<p>Esta stack tecnológica garante que o SpendWise seja uma aplicação moderna, escalável e maintível, seguindo as melhores práticas da indústria.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.instant", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2865 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://spendwise-gestaofinanceira.github.io/SpendWise-Documentacao/specs/business-rules/">
+      
+      
+        <link rel="prev" href="../user-stories/">
+      
+      
+        <link rel="next" href="../../backend/">
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Regras de Negócio - SpendWise-Documentacao</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#regras-de-negocio" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="SpendWise-Documentacao" class="md-header__button md-logo" aria-label="SpendWise-Documentacao" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SpendWise-Documentacao
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Regras de Negócio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../overview/about/" class="md-tabs__link">
+          
+  
+  
+  Visão Geral
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../user-stories/" class="md-tabs__link">
+          
+  
+  
+  Especificações
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../backend/" class="md-tabs__link">
+          
+  
+  
+  Backend
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../auth-service/" class="md-tabs__link">
+          
+  
+  
+  SpendWise Auth
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../frontend/" class="md-tabs__link">
+          
+  
+  
+  Frontend
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../docker/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Docker & DevOps
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../api/auth/" class="md-tabs__link">
+          
+  
+  
+  API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guides/setup/" class="md-tabs__link">
+          
+  
+  
+  Guias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../diagrams/" class="md-tabs__link">
+          
+  
+  
+  Diagramas
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SpendWise-Documentacao" class="md-nav__button md-logo" aria-label="SpendWise-Documentacao" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    SpendWise-Documentacao
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Visão Geral
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Geral
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sobre o Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/technologies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tecnologias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Especificações
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Especificações
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-stories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Regras de Negócio
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Negócio
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-1-limite-mensal-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 1: Limite Mensal por Categoria
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 1: Limite Mensal por Categoria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-2-orcamento-mensal-por-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 2: Orçamento Mensal por Usuário
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 2: Orçamento Mensal por Usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-3-validacao-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏰ Regra 3: Validação Temporal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏰ Regra 3: Validação Temporal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-4-prioridade-essencial-x-superfluo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 4: Prioridade Essencial x Supérfluo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 4: Prioridade Essencial x Supérfluo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-5-relatorios-e-alertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 5: Relatórios e Alertas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 5: Relatórios e Alertas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-6-metas-financeiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 6: Metas Financeiras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 6: Metas Financeiras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-de-integracao-das-regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testes de Integração das Regras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testes de Integração das Regras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cenario-complexo-multiplas-regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenário Complexo: Múltiplas Regras
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementacao-das-regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementação das Regras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementação das Regras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#domain-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-de-qualidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métricas de Qualidade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métricas de Qualidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cobertura-de-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cobertura de Testes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-continua" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação Contínua
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Backend
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Backend
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/clean-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/domain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Domain Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/application/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Application Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Infrastructure Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    SpendWise Auth
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            SpendWise Auth
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-service/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-service/frontend-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integração Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Frontend
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/componentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/api-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integração API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker & DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usuários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Categorias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/transactions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guias
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contribuindo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Diagramas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Diagramas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visão Geral
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/data-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modelo de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/MER-SpendWise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MER
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-1-limite-mensal-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 1: Limite Mensal por Categoria
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 1: Limite Mensal por Categoria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-2-orcamento-mensal-por-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 2: Orçamento Mensal por Usuário
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 2: Orçamento Mensal por Usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-3-validacao-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏰ Regra 3: Validação Temporal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏰ Regra 3: Validação Temporal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-4-prioridade-essencial-x-superfluo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 4: Prioridade Essencial x Supérfluo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 4: Prioridade Essencial x Supérfluo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-5-relatorios-e-alertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 5: Relatórios e Alertas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 5: Relatórios e Alertas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regra-6-metas-financeiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regra 6: Metas Financeiras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regra 6: Metas Financeiras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comportamento-esperado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamento Esperado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cenarios-de-teste_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenários de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-de-integracao-das-regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testes de Integração das Regras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testes de Integração das Regras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cenario-complexo-multiplas-regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenário Complexo: Múltiplas Regras
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementacao-das-regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementação das Regras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementação das Regras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#domain-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metricas-de-qualidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métricas de Qualidade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métricas de Qualidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cobertura-de-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cobertura de Testes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-continua" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação Contínua
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="regras-de-negocio">Regras de Negócio</h1>
+<h2 id="visao-geral"><strong>Visão Geral</strong></h2>
+<p>Este documento detalha todas as regras de negócio implementadas no SpendWise, servindo como especificação para desenvolvimento e validação dos testes.</p>
+<hr />
+<h2 id="regra-1-limite-mensal-por-categoria"><strong>Regra 1: Limite Mensal por Categoria</strong></h2>
+<h3 id="descricao"><strong>Descrição</strong></h3>
+<p>Controle de gastos por categoria com limite mensal acumulativo e sistema de alertas.</p>
+<h3 id="comportamento-esperado"><strong>Comportamento Esperado</strong></h3>
+<ol>
+<li><strong>Cálculo Acumulado</strong>: Somar todas as despesas da categoria no mês corrente + nova despesa</li>
+<li><strong>Alerta aos 80%</strong>: Emitir aviso quando atingir 80% do limite</li>
+<li><strong>Bloqueio aos 100%</strong>: Impedir nova despesa que ultrapasse o limite</li>
+</ol>
+<h3 id="criterios-de-aceitacao"><strong>Critérios de Aceitação</strong></h3>
+<ul>
+<li>Usuário pode definir limite mensal para cada categoria</li>
+<li>Sistema calcula gasto acumulado do mês automaticamente</li>
+<li>Alerta é exibido quando gasto ≥ 80% do limite</li>
+<li>Despesa é bloqueada quando gasto + nova despesa &gt; limite</li>
+<li>Alertas são enviados em tempo real</li>
+</ul>
+<h3 id="cenarios-de-teste"><strong>Cenários de Teste</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">Cenário:</span><span class="nf"> Alerta aos 80% do limite</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">  Dado </span><span class="nf">que tenho uma categoria &quot;</span><span class="s">Alimentação</span><span class="nf">&quot; com limite de R$ </span><span class="s">1000</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nf">  </span><span class="k">E </span><span class="nf">já gastei R$ </span><span class="s">790</span><span class="nf"> no mês atual</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nf">  </span><span class="k">Quando </span><span class="nf">tento adicionar uma despesa de R$ </span><span class="s">50</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nf">  </span><span class="k">Então </span><span class="nf">o sistema deve permitir a despesa</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nf">  </span><span class="k">E </span><span class="nf">exibir alerta &quot;</span><span class="s">Categoria próxima do limite: 84% utilizado</span><span class="nf">&quot;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">Cenário:</span><span class="nf"> Bloqueio ao ultrapassar limite</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">  Dado </span><span class="nf">que tenho uma categoria &quot;</span><span class="s">Lazer</span><span class="nf">&quot; com limite de R$ </span><span class="s">500</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nf">  </span><span class="k">E </span><span class="nf">já gastei R$ </span><span class="s">480</span><span class="nf"> no mês atual</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nf">  </span><span class="k">Quando </span><span class="nf">tento adicionar uma despesa de R$ </span><span class="s">50</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nf">  </span><span class="k">Então </span><span class="nf">o sistema deve bloquear a operação</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nf">  </span><span class="k">E </span><span class="nf">exibir mensagem &quot;</span><span class="s">Despesa ultrapassa limite da categoria</span><span class="nf">&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="regra-2-orcamento-mensal-por-usuario"><strong>Regra 2: Orçamento Mensal por Usuário</strong></h2>
+<h3 id="descricao_1"><strong>Descrição</strong></h3>
+<p>Controle global de gastos mensais por usuário, impedindo que o total de despesas ultrapasse o orçamento definido.</p>
+<h3 id="comportamento-esperado_1"><strong>Comportamento Esperado</strong></h3>
+<ol>
+<li><strong>Orçamento Único</strong>: Um orçamento por usuário por mês</li>
+<li><strong>Validação Global</strong>: Verificar total de despesas antes de permitir nova transação</li>
+<li><strong>Bloqueio Preventivo</strong>: Impedir despesa que exceda orçamento restante</li>
+</ol>
+<h3 id="criterios-de-aceitacao_1"><strong>Critérios de Aceitação</strong></h3>
+<ul>
+<li>Usuário define orçamento mensal único</li>
+<li>Sistema calcula total de despesas do mês</li>
+<li>Despesa é bloqueada se exceder saldo restante</li>
+<li>Relatório mostra % de utilização do orçamento</li>
+<li>Alertas aos 90% de utilização</li>
+</ul>
+<h3 id="cenarios-de-teste_1"><strong>Cenários de Teste</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">Cenário:</span><span class="nf"> Bloqueio por falta de orçamento</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">  Dado </span><span class="nf">que defini orçamento mensal de R$ </span><span class="s">3000</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nf">  </span><span class="k">E </span><span class="nf">já gastei R$ </span><span class="s">2950</span><span class="nf"> no mês atual</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nf">  </span><span class="k">Quando </span><span class="nf">tento adicionar despesa de R$ </span><span class="s">100</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nf">  </span><span class="k">Então </span><span class="nf">o sistema deve bloquear a operação</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nf">  </span><span class="k">E </span><span class="nf">exibir &quot;</span><span class="s">Orçamento mensal insuficiente: restam R$ 50</span><span class="nf">&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="regra-3-validacao-temporal">⏰ <strong>Regra 3: Validação Temporal</strong></h2>
+<h3 id="descricao_2"><strong>Descrição</strong></h3>
+<p>Controles de integridade temporal para garantir consistência dos dados financeiros.</p>
+<h3 id="comportamento-esperado_2"><strong>Comportamento Esperado</strong></h3>
+<ol>
+<li><strong>Data Não Futura</strong>: Transações não podem ter data posterior ao dia atual</li>
+<li><strong>Fechamento Mensal</strong>: Após fechamento, proibir alterações no período</li>
+<li><strong>Auditoria</strong>: Manter histórico de todas as alterações</li>
+</ol>
+<h3 id="criterios-de-aceitacao_2"><strong>Critérios de Aceitação</strong></h3>
+<ul>
+<li>Data da transação ≤ data atual</li>
+<li>Transações de mês fechado são bloqueadas para edição</li>
+<li>Fechamento mensal é irreversível</li>
+<li>Log de auditoria registra todas as tentativas</li>
+</ul>
+<h3 id="cenarios-de-teste_2"><strong>Cenários de Teste</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">Cenário:</span><span class="nf"> Bloqueio de data futura</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">  Quando </span><span class="nf">tento criar transação com data de amanhã</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nf">  </span><span class="k">Então </span><span class="nf">o sistema deve rejeitar</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nf">  </span><span class="k">E </span><span class="nf">exibir &quot;</span><span class="s">Data não pode ser futura</span><span class="nf">&quot;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">Cenário:</span><span class="nf"> Proteção de mês fechado</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">  Dado </span><span class="nf">que fechei o mês de julho/</span><span class="s">2025</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nf">  </span><span class="k">Quando </span><span class="nf">tento editar transação de </span><span class="s">15</span><span class="nf">/</span><span class="s">07</span><span class="nf">/</span><span class="s">2025</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nf">  </span><span class="k">Então </span><span class="nf">o sistema deve bloquear</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nf">  </span><span class="k">E </span><span class="nf">exibir &quot;</span><span class="s">Mês já fechado para alterações</span><span class="nf">&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="regra-4-prioridade-essencial-x-superfluo"><strong>Regra 4: Prioridade Essencial x Supérfluo</strong></h2>
+<h3 id="descricao_3"><strong>Descrição</strong></h3>
+<p>Sistema inteligente de priorização que bloqueia gastos supérfluos quando há comprometimento financeiro.</p>
+<h3 id="comportamento-esperado_3"><strong>Comportamento Esperado</strong></h3>
+<ol>
+<li><strong>Classificação</strong>: Categorias marcadas como ESSENCIAL ou SUPERFLUO</li>
+<li><strong>Validação Preventiva</strong>: Bloquear supérfluos se essenciais comprometidos</li>
+<li><strong>Projeção Inteligente</strong>: Considerar tendências mensais</li>
+</ol>
+<h3 id="criterios-de-aceitacao_3"><strong>Critérios de Aceitação</strong></h3>
+<ul>
+<li>Categorias classificadas por tipo</li>
+<li>Gastos supérfluos bloqueados se orçamento essencial &gt; 100%</li>
+<li>Alerta quando projeção essencial indica problema</li>
+<li>Exceções podem ser autorizadas manualmente</li>
+</ul>
+<h3 id="cenarios-de-teste_3"><strong>Cenários de Teste</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">Cenário:</span><span class="nf"> Bloqueio de supérfluo por comprometimento essencial</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">  Dado </span><span class="nf">que categorias essenciais já consumiram </span><span class="s">105</span><span class="nf">% do orçamento</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nf">  </span><span class="k">Quando </span><span class="nf">tento adicionar despesa em categoria supérflua</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nf">  </span><span class="k">Então </span><span class="nf">o sistema deve bloquear</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nf">  </span><span class="k">E </span><span class="nf">sugerir &quot;</span><span class="s">Quite primeiro os gastos essenciais</span><span class="nf">&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="regra-5-relatorios-e-alertas"><strong>Regra 5: Relatórios e Alertas</strong></h2>
+<h3 id="descricao_4"><strong>Descrição</strong></h3>
+<p>Sistema proativo de monitoramento e reporting para educação financeira.</p>
+<h3 id="comportamento-esperado_4"><strong>Comportamento Esperado</strong></h3>
+<ol>
+<li><strong>Relatório Mensal</strong>: Consolidação automática de receitas, despesas e saldos</li>
+<li><strong>Alertas Automáticos</strong>: Notificações preventivas</li>
+<li><strong>Análise por Categoria</strong>: Breakdown detalhado dos gastos</li>
+</ol>
+<h3 id="criterios-de-aceitacao_4"><strong>Critérios de Aceitação</strong></h3>
+<ul>
+<li>Relatório mensal gerado automaticamente</li>
+<li>Alertas em tempo real para limites</li>
+<li>Comparação mês anterior</li>
+<li>Gráficos e visualizações</li>
+</ul>
+<hr />
+<h2 id="regra-6-metas-financeiras"><strong>Regra 6: Metas Financeiras</strong></h2>
+<h3 id="descricao_5"><strong>Descrição</strong></h3>
+<p>Sistema de definição e acompanhamento de objetivos financeiros com projeções inteligentes.</p>
+<h3 id="comportamento-esperado_5"><strong>Comportamento Esperado</strong></h3>
+<ol>
+<li><strong>Definição de Metas</strong>: "Juntar X até YYYY-MM"</li>
+<li><strong>Cálculo de Progresso</strong>: Receitas - Despesas - Compromissos</li>
+<li><strong>Projeção de Alcance</strong>: Estimativa baseada em média mensal</li>
+</ol>
+<h3 id="criterios-de-aceitacao_5"><strong>Critérios de Aceitação</strong></h3>
+<ul>
+<li>Múltiplas metas simultâneas</li>
+<li>Progresso calculado automaticamente</li>
+<li>Projeção de data de alcance</li>
+<li>Alertas de marcos (25%, 50%, 75%, 100%)</li>
+</ul>
+<h3 id="cenarios-de-teste_4"><strong>Cenários de Teste</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">Cenário:</span><span class="nf"> Projeção de meta</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">  Dado </span><span class="nf">que defini meta de R$ </span><span class="s">10000</span><span class="nf"> até dez/</span><span class="s">2025</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nf">  </span><span class="k">E </span><span class="nf">tenho histórico de economia média de R$ </span><span class="s">1000</span><span class="nf">/mês</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nf">  </span><span class="k">Quando </span><span class="nf">consulto o progresso</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nf">  </span><span class="k">Então </span><span class="nf">sistema projeta alcance em outubro/</span><span class="s">2025</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nf">  </span><span class="k">E </span><span class="nf">sugere &quot;</span><span class="s">Meta será alcançada 2 meses antes do prazo</span><span class="nf">&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="testes-de-integracao-das-regras"><strong>Testes de Integração das Regras</strong></h2>
+<h3 id="cenario-complexo-multiplas-regras"><strong>Cenário Complexo: Múltiplas Regras</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">Cenário:</span><span class="nf"> Validação integrada de todas as regras</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">  Dado </span><span class="nf">usuário com orçamento mensal de R$ </span><span class="s">3000</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nf">  </span><span class="k">E </span><span class="nf">categoria &quot;</span><span class="s">Alimentação</span><span class="nf">&quot; (essencial) com limite R$ </span><span class="s">800</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nf">  </span><span class="k">E </span><span class="nf">categoria &quot;</span><span class="s">Lazer</span><span class="nf">&quot; (supérfluo) com limite R$ </span><span class="s">400</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nf">  </span><span class="k">E </span><span class="nf">já gastou R$ </span><span class="s">2800</span><span class="nf"> no mês (R$ </span><span class="s">750</span><span class="nf"> alimentação, R$ </span><span class="s">2050</span><span class="nf"> outras)</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nf">  </span><span class="k">Quando </span><span class="nf">tenta adicionar R$ </span><span class="s">100</span><span class="nf"> em &quot;</span><span class="s">Lazer</span><span class="nf">&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="nf">  </span><span class="k">Então </span><span class="nf">sistema deve:</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nf">    - Verificar limite categoria (OK: </span><span class="s">0</span><span class="nf">/</span><span class="s">400</span><span class="nf">)</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nf">    - Verificar orçamento global (OK: restam R$ </span><span class="s">200</span><span class="nf">)</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="nf">    - Verificar prioridade (OK: essenciais controlados)</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="nf">    - Permitir transação</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="nf">    - Emitir alerta &quot;</span><span class="s">Orçamento 93% utilizado</span><span class="nf">&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="implementacao-das-regras"><strong>Implementação das Regras</strong></h2>
+<h3 id="domain-layer"><strong>Domain Layer</strong></h3>
+<p>As regras de negócio são implementadas principalmente no Domain Layer:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Categoria</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">{</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">UltrapassouLimite</span><span class="p">(</span><span class="kt">decimal</span><span class="w"> </span><span class="n">valorGasto</span><span class="p">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">valorGasto</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">Limite</span><span class="o">?.</span><span class="n">Valor</span><span class="p">;</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">PodeGastar</span><span class="p">(</span><span class="kt">decimal</span><span class="w"> </span><span class="n">valorGasto</span><span class="p">,</span><span class="w"> </span><span class="kt">decimal</span><span class="w"> </span><span class="n">gastoAtual</span><span class="p">)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">gastoAtual</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">valorGasto</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="p">(</span><span class="n">Limite</span><span class="o">?.</span><span class="n">Valor</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="kt">decimal</span><span class="p">.</span><span class="n">MaxValue</span><span class="p">);</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="application-layer"><strong>Application Layer</strong></h3>
+<p>Validações complexas são implementadas nos handlers:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">CreateTransacaoCommandHandler</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IRequestHandler</span><span class="o">&lt;</span><span class="n">CreateTransacaoCommand</span><span class="p">,</span><span class="w"> </span><span class="n">TransacaoDto</span><span class="o">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p">{</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="n">TransacaoDto</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Handle</span><span class="p">(</span><span class="n">CreateTransacaoCommand</span><span class="w"> </span><span class="n">request</span><span class="p">,</span><span class="w"> </span><span class="n">CancellationToken</span><span class="w"> </span><span class="n">cancellationToken</span><span class="p">)</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">        </span><span class="c1">// Validar regras de negócio</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">        </span><span class="k">await</span><span class="w"> </span><span class="nf">ValidateBusinessRules</span><span class="p">(</span><span class="n">request</span><span class="p">);</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">        </span><span class="c1">// Criar transação</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">        </span><span class="kt">var</span><span class="w"> </span><span class="n">transacao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Transacao</span><span class="p">(</span><span class="cm">/* ... */</span><span class="p">);</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">        </span><span class="c1">// Salvar</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">        </span><span class="k">await</span><span class="w"> </span><span class="n">_unitOfWork</span><span class="p">.</span><span class="n">Transacoes</span><span class="p">.</span><span class="n">AddAsync</span><span class="p">(</span><span class="n">transacao</span><span class="p">);</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">        </span><span class="k">await</span><span class="w"> </span><span class="n">_unitOfWork</span><span class="p">.</span><span class="n">SaveChangesAsync</span><span class="p">();</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">TransacaoDto</span><span class="o">&gt;</span><span class="p">(</span><span class="n">transacao</span><span class="p">);</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="testes"><strong>Testes</strong></h3>
+<p>Cada regra é testada isoladamente e em conjunto:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="na">[Fact]</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Categoria_UltrapassouLimite_ShouldReturnTrue</span><span class="p">()</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">{</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="c1">// Arrange</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">categoria</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Categoria</span><span class="p">(</span><span class="s">&quot;Teste&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TipoCategoria</span><span class="p">.</span><span class="n">Despesa</span><span class="p">,</span><span class="w"> </span><span class="n">Guid</span><span class="p">.</span><span class="n">NewGuid</span><span class="p">(),</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Money</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="c1">// Act</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">categoria</span><span class="p">.</span><span class="n">UltrapassouLimite</span><span class="p">(</span><span class="mi">150</span><span class="p">);</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">    </span><span class="c1">// Assert</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">True</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="metricas-de-qualidade"><strong>Métricas de Qualidade</strong></h2>
+<h3 id="cobertura-de-testes"><strong>Cobertura de Testes</strong></h3>
+<ul>
+<li><strong>Regras de Negócio</strong>: 100% cobertas</li>
+<li><strong>Cenários de Teste</strong>: 95% implementados</li>
+<li><strong>Validações</strong>: 100% testadas</li>
+</ul>
+<h3 id="validacao-continua"><strong>Validação Contínua</strong></h3>
+<ul>
+<li><strong>CI/CD</strong>: Validação automática em cada commit</li>
+<li><strong>Testes de Integração</strong>: Validação end-to-end</li>
+<li><strong>Testes de Performance</strong>: Validação de regras complexas</li>
+</ul>
+<p>Esta documentação garante que todas as regras de negócio sejam implementadas corretamente e testadas adequadamente, mantendo a integridade e consistência do sistema.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.instant", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

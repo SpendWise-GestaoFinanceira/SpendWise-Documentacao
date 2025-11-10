@@ -1,0 +1,3174 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://spendwise-gestaofinanceira.github.io/SpendWise-Documentacao/backend/backlog/">
+      
+      
+        <link rel="prev" href="../testes/">
+      
+      
+        <link rel="next" href="../../auth-service/">
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Backlog - SpendWise-Documentacao</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#product-backlog-backend" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="SpendWise-Documentacao" class="md-header__button md-logo" aria-label="SpendWise-Documentacao" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SpendWise-Documentacao
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Backlog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../overview/about/" class="md-tabs__link">
+          
+  
+  
+  Visão Geral
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../specs/user-stories/" class="md-tabs__link">
+          
+  
+  
+  Especificações
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Backend
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../auth-service/" class="md-tabs__link">
+          
+  
+  
+  SpendWise Auth
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../frontend/" class="md-tabs__link">
+          
+  
+  
+  Frontend
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../docker/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Docker & DevOps
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../api/auth/" class="md-tabs__link">
+          
+  
+  
+  API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guides/setup/" class="md-tabs__link">
+          
+  
+  
+  Guias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../diagrams/" class="md-tabs__link">
+          
+  
+  
+  Diagramas
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SpendWise-Documentacao" class="md-nav__button md-logo" aria-label="SpendWise-Documentacao" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    SpendWise-Documentacao
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Visão Geral
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Geral
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sobre o Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/technologies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tecnologias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Especificações
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Especificações
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../specs/user-stories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../specs/business-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Negócio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Backend
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Backend
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Domain Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../application/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Application Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Infrastructure Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-1-autenticacao-e-gerenciamento-de-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 1: Autenticação e Gerenciamento de Usuários
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 1: Autenticação e Gerenciamento de Usuários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-001-cadastro-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-001: Cadastro de Usuário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-002-login-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-002: Login de Usuário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-003-logout-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-003: Logout de Usuário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-004-recuperacao-de-senha" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-004: Recuperação de Senha
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-005-perfil-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-005: Perfil de Usuário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-2-gestao-de-categorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 2: Gestão de Categorias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 2: Gestão de Categorias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-010-crud-de-categorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-010: CRUD de Categorias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-011-limite-financeiro-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-011: Limite Financeiro por Categoria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-3-gestao-de-transacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 3: Gestão de Transações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 3: Gestão de Transações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-020-registro-de-receitas-e-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-020: Registro de Receitas e Despesas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-021-listagem-de-transacoes-com-filtros" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-021: Listagem de Transações com Filtros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-022-edicao-e-exclusao-de-transacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-022: Edição e Exclusão de Transações
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-4-orcamento-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 4: Orçamento Mensal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 4: Orçamento Mensal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-030-definicao-de-orcamento-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-030: Definição de Orçamento Mensal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-031-acompanhamento-de-gastos-vs-orcamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-031: Acompanhamento de Gastos vs Orçamento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-5-fechamento-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 5: Fechamento Mensal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 5: Fechamento Mensal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-040-fechamento-automatico-do-mes" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-040: Fechamento Automático do Mês
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-041-historico-de-fechamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-041: Histórico de Fechamentos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-6-relatorios-e-analises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 6: Relatórios e Análises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 6: Relatórios e Análises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-050-relatorio-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-050: Relatório por Categoria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-051-evolucao-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-051: Evolução Mensal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-060-exportacao-para-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-060: Exportação para CSV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-061-importacao-de-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-061: Importação de CSV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-062-comparativo-entre-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-062: Comparativo entre Meses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-7-metas-financeiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 7: Metas Financeiras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 7: Metas Financeiras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-070-criacao-de-metas" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-070: Criação de Metas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-071-acompanhamento-de-progresso" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-071: Acompanhamento de Progresso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-072-edicao-e-exclusao-de-metas" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-072: Edição e Exclusão de Metas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-073-estatisticas-de-metas" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-073: Estatísticas de Metas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-8-infraestrutura-e-qualidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 8: Infraestrutura e Qualidade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 8: Infraestrutura e Qualidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-080-clean-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-080: Clean Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-081-cqrs-com-mediatr" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-081: CQRS com MediatR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-082-entity-framework-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-082: Entity Framework Core
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-083-repository-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-083: Repository Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-084-autenticacao-jwt" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-084: Autenticação JWT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-085-validacoes-com-fluentvalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-085: Validações com FluentValidation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-086-logging-com-serilog" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-086: Logging com Serilog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-087-health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-087: Health Checks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-088-docker-e-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-088: Docker e Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-089-servico-de-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-089: Serviço de Email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-090-testes-unitarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-090: Testes Unitários
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-091-documentacao-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-091: Documentação da API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-092-cicd-com-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-092: CI/CD com GitHub Actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tecnologias-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tecnologias Utilizadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#padroes-implementados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Padrões Implementados
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    SpendWise Auth
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            SpendWise Auth
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-service/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-service/frontend-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integração Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Frontend
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/componentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/api-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integração API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/testes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker & DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usuários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Categorias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/transactions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guias
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Guias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contribuindo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Diagramas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Diagramas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visão Geral
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/data-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modelo de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagrams/MER-SpendWise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MER
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-1-autenticacao-e-gerenciamento-de-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 1: Autenticação e Gerenciamento de Usuários
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 1: Autenticação e Gerenciamento de Usuários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-001-cadastro-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-001: Cadastro de Usuário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-002-login-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-002: Login de Usuário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-003-logout-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-003: Logout de Usuário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-004-recuperacao-de-senha" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-004: Recuperação de Senha
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-005-perfil-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-005: Perfil de Usuário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-2-gestao-de-categorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 2: Gestão de Categorias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 2: Gestão de Categorias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-010-crud-de-categorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-010: CRUD de Categorias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-011-limite-financeiro-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-011: Limite Financeiro por Categoria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-3-gestao-de-transacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 3: Gestão de Transações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 3: Gestão de Transações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-020-registro-de-receitas-e-despesas" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-020: Registro de Receitas e Despesas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-021-listagem-de-transacoes-com-filtros" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-021: Listagem de Transações com Filtros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-022-edicao-e-exclusao-de-transacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-022: Edição e Exclusão de Transações
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-4-orcamento-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 4: Orçamento Mensal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 4: Orçamento Mensal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-030-definicao-de-orcamento-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-030: Definição de Orçamento Mensal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-031-acompanhamento-de-gastos-vs-orcamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-031: Acompanhamento de Gastos vs Orçamento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-5-fechamento-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 5: Fechamento Mensal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 5: Fechamento Mensal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-040-fechamento-automatico-do-mes" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-040: Fechamento Automático do Mês
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-041-historico-de-fechamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-041: Histórico de Fechamentos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-6-relatorios-e-analises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 6: Relatórios e Análises
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 6: Relatórios e Análises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-050-relatorio-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-050: Relatório por Categoria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-051-evolucao-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-051: Evolução Mensal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-060-exportacao-para-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-060: Exportação para CSV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-061-importacao-de-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-061: Importação de CSV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-062-comparativo-entre-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-062: Comparativo entre Meses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-7-metas-financeiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 7: Metas Financeiras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 7: Metas Financeiras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-070-criacao-de-metas" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-070: Criação de Metas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-071-acompanhamento-de-progresso" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-071: Acompanhamento de Progresso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-072-edicao-e-exclusao-de-metas" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-072: Edição e Exclusão de Metas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-073-estatisticas-de-metas" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-073: Estatísticas de Metas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epic-8-infraestrutura-e-qualidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 8: Infraestrutura e Qualidade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Epic 8: Infraestrutura e Qualidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sw-080-clean-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-080: Clean Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-081-cqrs-com-mediatr" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-081: CQRS com MediatR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-082-entity-framework-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-082: Entity Framework Core
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-083-repository-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-083: Repository Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-084-autenticacao-jwt" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-084: Autenticação JWT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-085-validacoes-com-fluentvalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-085: Validações com FluentValidation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-086-logging-com-serilog" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-086: Logging com Serilog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-087-health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-087: Health Checks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-088-docker-e-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-088: Docker e Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-089-servico-de-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-089: Serviço de Email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-090-testes-unitarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-090: Testes Unitários
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-091-documentacao-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-091: Documentação da API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sw-092-cicd-com-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      SW-092: CI/CD com GitHub Actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tecnologias-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tecnologias Utilizadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#padroes-implementados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Padrões Implementados
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="product-backlog-backend">Product Backlog - Backend</h1>
+<p>Este documento contém o backlog completo do backend do SpendWise, organizado por Epics e User Stories.</p>
+<h2 id="resumo-geral">Resumo Geral</h2>
+<table>
+<thead>
+<tr>
+<th>Epic</th>
+<th>Histórias</th>
+<th>Pontos</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Epic 1: Autenticação</td>
+<td>5</td>
+<td>28</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>Epic 2: Categorias</td>
+<td>2</td>
+<td>21</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>Epic 3: Transações</td>
+<td>3</td>
+<td>29</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>Epic 4: Orçamento</td>
+<td>2</td>
+<td>13</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>Epic 5: Fechamento</td>
+<td>2</td>
+<td>18</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>Epic 6: Relatórios</td>
+<td>5</td>
+<td>34</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>Epic 7: Metas</td>
+<td>4</td>
+<td>26</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>Epic 8: Infraestrutura</td>
+<td>13</td>
+<td>144</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td><strong>36</strong></td>
+<td><strong>313</strong></td>
+<td><strong>DONE</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="epic-1-autenticacao-e-gerenciamento-de-usuarios">Epic 1: Autenticação e Gerenciamento de Usuários</h2>
+<h3 id="sw-001-cadastro-de-usuario">SW-001: Cadastro de Usuário</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um novo usuário, quero me cadastrar no sistema para poder gerenciar minhas finanças pessoais.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode se cadastrar com nome, email e senha
+- Email deve ser único no sistema
+- Senha deve ter mínimo 6 caracteres
+- Sistema valida formato de email
+- Senha é armazenada com hash seguro
+- Retorna erro se email já existir
+- Retorna token JWT após cadastro bem-sucedido</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>POST /api/auth/register</code>
+- Command: <code>RegisterUserCommand</code>
+- Handler: <code>RegisterUserCommandHandler</code>
+- Validator: <code>RegisterUserCommandValidator</code>
+- Entity: <code>Usuario</code></p>
+<hr />
+<h3 id="sw-002-login-de-usuario">SW-002: Login de Usuário</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como um usuário cadastrado, quero fazer login no sistema para acessar minhas informações financeiras.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode fazer login com email e senha
+- Sistema valida credenciais
+- Retorna token JWT válido por 7 dias
+- Token contém ID e email do usuário
+- Retorna erro 401 se credenciais inválidas</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>POST /api/auth/login</code>
+- Command: <code>LoginCommand</code>
+- Handler: <code>LoginCommandHandler</code>
+- Service: <code>JwtService</code></p>
+<hr />
+<h3 id="sw-003-logout-de-usuario">SW-003: Logout de Usuário</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 2</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero fazer logout do sistema para encerrar minha sessão com segurança.</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>POST /api/auth/logout</code>
+- Tipo: Operação client-side</p>
+<hr />
+<h3 id="sw-004-recuperacao-de-senha">SW-004: Recuperação de Senha</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário que esqueceu a senha, quero solicitar recuperação de senha para poder acessar minha conta novamente.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode solicitar recuperação informando email
+- Sistema gera token seguro de 32 bytes
+- Token é válido por 30 minutos
+- Email é enviado com link de redefinição
+- Usuário pode redefinir senha com token válido
+- Token é invalidado após uso</p>
+<p><strong>Implementação:</strong>
+- Endpoints: <code>POST /api/auth/forgot-password</code>, <code>POST /api/auth/reset-password</code>
+- Commands: <code>ForgotPasswordCommand</code>, <code>ResetPasswordCommand</code>
+- Service: <code>IEmailService</code> (MockEmailService em dev, Brevo em prod)</p>
+<hr />
+<h3 id="sw-005-perfil-de-usuario">SW-005: Perfil de Usuário</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero visualizar e editar meu perfil para manter minhas informações atualizadas.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode visualizar seu perfil
+- Usuário pode editar nome
+- Usuário pode ativar/desativar notificações
+- Sistema valida dados antes de salvar</p>
+<p><strong>Implementação:</strong>
+- Endpoints: <code>GET /api/usuarios/perfil</code>, <code>PUT /api/usuarios/perfil</code>
+- Query: <code>GetUserProfileQuery</code>
+- Command: <code>UpdateUserProfileCommand</code></p>
+<hr />
+<h2 id="epic-2-gestao-de-categorias">Epic 2: Gestão de Categorias</h2>
+<h3 id="sw-010-crud-de-categorias">SW-010: CRUD de Categorias</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 13</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero gerenciar categorias de gastos para organizar minhas transações financeiras.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode criar categoria com nome, tipo e cor
+- Tipo pode ser ESSENCIAL ou SUPERFLUO
+- Usuário pode listar todas suas categorias
+- Usuário pode editar categoria existente
+- Usuário pode excluir categoria sem transações
+- Sistema impede exclusão de categoria com transações</p>
+<p><strong>Implementação:</strong>
+- Endpoints: GET, POST, PUT, DELETE <code>/api/categorias</code>
+- Commands: <code>CreateCategoriaCommand</code>, <code>UpdateCategoriaCommand</code>, <code>DeleteCategoriaCommand</code>
+- Queries: <code>GetCategoriasQuery</code>, <code>GetCategoriaByIdQuery</code>
+- Entity: <code>Categoria</code></p>
+<hr />
+<h3 id="sw-011-limite-financeiro-por-categoria">SW-011: Limite Financeiro por Categoria</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero definir limite mensal para cada categoria para controlar meus gastos por área.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode definir limite mensal opcional para categoria
+- Sistema calcula gasto atual da categoria
+- Sistema valida se nova despesa excede limite
+- Sistema bloqueia transação se exceder limite
+- Sistema permite transação se atingir limite exato</p>
+<p><strong>Implementação:</strong>
+- Campos em Categoria: <code>LimiteDefinido</code>, <code>LimiteMensal</code>
+- Validação em: <code>CreateTransacaoCommandHandler</code></p>
+<hr />
+<h2 id="epic-3-gestao-de-transacoes">Epic 3: Gestão de Transações</h2>
+<h3 id="sw-020-registro-de-receitas-e-despesas">SW-020: Registro de Receitas e Despesas</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 13</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero registrar minhas receitas e despesas para acompanhar meu fluxo financeiro.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode criar transação do tipo RECEITA ou DESPESA
+- Transação deve ter descrição, valor e data
+- Valor deve ser positivo
+- Data não pode ser futura
+- Despesa deve ter categoria obrigatória
+- Receita pode ter categoria opcional
+- Sistema valida limite de categoria para despesas</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>POST /api/transacoes</code>
+- Command: <code>CreateTransacaoCommand</code>
+- Entity: <code>Transacao</code>
+- Enum: <code>TipoTransacao</code></p>
+<hr />
+<h3 id="sw-021-listagem-de-transacoes-com-filtros">SW-021: Listagem de Transações com Filtros</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero listar minhas transações com filtros para encontrar transações específicas facilmente.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode listar todas suas transações
+- Usuário pode filtrar por mês, ano, tipo e categoria
+- Resultados são ordenados por data (mais recente primeiro)</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>GET /api/transacoes?mes=1&amp;ano=2024&amp;tipo=Despesa&amp;categoriaId=123</code>
+- Query: <code>GetTransacoesQuery</code></p>
+<hr />
+<h3 id="sw-022-edicao-e-exclusao-de-transacoes">SW-022: Edição e Exclusão de Transações</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero editar e excluir transações para corrigir erros ou remover registros indevidos.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode editar transação existente
+- Usuário pode alterar todos os campos
+- Sistema valida novos dados antes de salvar
+- Usuário pode excluir transação
+- Sistema impede edição/exclusão de transação de outro usuário</p>
+<p><strong>Implementação:</strong>
+- Endpoints: <code>PUT /api/transacoes/{id}</code>, <code>DELETE /api/transacoes/{id}</code>
+- Commands: <code>UpdateTransacaoCommand</code>, <code>DeleteTransacaoCommand</code></p>
+<hr />
+<h2 id="epic-4-orcamento-mensal">Epic 4: Orçamento Mensal</h2>
+<h3 id="sw-030-definicao-de-orcamento-mensal">SW-030: Definição de Orçamento Mensal</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero definir um orçamento mensal para controlar meus gastos totais do mês.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode criar orçamento para mês/ano específico
+- Orçamento tem valor limite total
+- Usuário pode ter apenas um orçamento por mês/ano
+- Sistema valida se já existe orçamento para o período</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>POST /api/orcamentos-mensais</code>
+- Command: <code>CreateOrcamentoMensalCommand</code>
+- Entity: <code>OrcamentoMensal</code></p>
+<hr />
+<h3 id="sw-031-acompanhamento-de-gastos-vs-orcamento">SW-031: Acompanhamento de Gastos vs Orçamento</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero acompanhar meus gastos em relação ao orçamento para saber se estou dentro do planejado.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode visualizar orçamento de mês/ano específico
+- Sistema calcula total de despesas do período
+- Sistema calcula saldo restante
+- Sistema calcula percentual utilizado</p>
+<p><strong>Implementação:</strong>
+- Endpoints: <code>GET /api/orcamentos-mensais</code>, <code>GET /api/orcamentos-mensais/{ano}/{mes}</code>
+- Queries: <code>GetOrcamentosMensaisQuery</code>, <code>GetOrcamentoMensalByPeriodoQuery</code></p>
+<hr />
+<h2 id="epic-5-fechamento-mensal">Epic 5: Fechamento Mensal</h2>
+<h3 id="sw-040-fechamento-automatico-do-mes">SW-040: Fechamento Automático do Mês</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 13</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero fechar o mês atual para consolidar minhas finanças do período.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode fechar mês/ano específico
+- Sistema consolida todas transações do período
+- Sistema calcula total de receitas
+- Sistema calcula total de despesas
+- Sistema calcula saldo final (receitas - despesas)
+- Sistema impede fechar mês já fechado
+- Data de fechamento é registrada automaticamente</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>POST /api/fechamento-mensal</code>
+- Command: <code>CreateFechamentoMensalCommand</code>
+- Handler: <code>CreateFechamentoMensalCommandHandler</code>
+- Entity: <code>FechamentoMensal</code></p>
+<hr />
+<h3 id="sw-041-historico-de-fechamentos">SW-041: Histórico de Fechamentos</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero visualizar histórico de fechamentos para acompanhar a evolução das minhas finanças.</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Usuário pode listar todos fechamentos realizados
+- Lista é ordenada por data (mais recente primeiro)
+- Cada fechamento mostra mês, ano, receitas, despesas e saldo
+- Usuário pode visualizar detalhes de fechamento específico
+- Sistema retorna apenas fechamentos do usuário autenticado</p>
+<p><strong>Implementação:</strong>
+- Endpoints: <code>GET /api/fechamento-mensal</code>, <code>GET /api/fechamento-mensal/{id}</code>
+- Queries: <code>GetFechamentosMensaisQuery</code>, <code>GetFechamentoMensalByIdQuery</code></p>
+<hr />
+<h2 id="epic-6-relatorios-e-analises">Epic 6: Relatórios e Análises</h2>
+<h3 id="sw-050-relatorio-por-categoria">SW-050: Relatório por Categoria</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero ver relatório de gastos por categoria para identificar onde gasto mais.</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>GET /api/transacoes/relatorio-categoria?mes=1&amp;ano=2024</code>
+- Query: <code>GetRelatorioPorCategoriaQuery</code></p>
+<hr />
+<h3 id="sw-051-evolucao-mensal">SW-051: Evolução Mensal</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero ver evolução mensal das minhas finanças para identificar tendências ao longo do tempo.</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>GET /api/transacoes/evolucao-mensal?ano=2024</code>
+- Query: <code>GetEvolucaoMensalQuery</code></p>
+<hr />
+<h3 id="sw-060-exportacao-para-csv">SW-060: Exportação para CSV</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> COULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero exportar minhas transações para CSV para analisar em outras ferramentas.</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>GET /api/transacoes/export-csv?mes=1&amp;ano=2024</code>
+- Query: <code>ExportTransacoesToCsvQuery</code></p>
+<hr />
+<h3 id="sw-061-importacao-de-csv">SW-061: Importação de CSV</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> COULD HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero importar transações de arquivo CSV para migrar dados de outras ferramentas.</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>POST /api/transacoes/import-csv</code>
+- Command: <code>ImportTransacoesFromCsvCommand</code></p>
+<hr />
+<h3 id="sw-062-comparativo-entre-meses">SW-062: Comparativo entre Meses</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> COULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero comparar dois meses diferentes para identificar variações nos meus gastos.</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>GET /api/transacoes/comparativo-meses?mes1=1&amp;ano1=2024&amp;mes2=12&amp;ano2=2023</code>
+- Query: <code>GetComparativoMesesQuery</code></p>
+<hr />
+<h2 id="epic-7-metas-financeiras">Epic 7: Metas Financeiras</h2>
+<h3 id="sw-070-criacao-de-metas">SW-070: Criação de Metas</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> COULD HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero criar metas financeiras para planejar objetivos de longo prazo.</p>
+<p><strong>Implementação:</strong>
+- Endpoint: <code>POST /api/metas</code>
+- Command: <code>CreateMetaCommand</code>
+- Entity: <code>Meta</code></p>
+<hr />
+<h3 id="sw-071-acompanhamento-de-progresso">SW-071: Acompanhamento de Progresso</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> COULD HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero acompanhar progresso das minhas metas para saber quanto falta para alcançar.</p>
+<p><strong>Implementação:</strong>
+- Endpoints: <code>GET /api/metas</code>, <code>GET /api/metas/{id}</code>, <code>PATCH /api/metas/{id}/progresso</code>
+- Queries: <code>GetMetasQuery</code>, <code>GetMetaByIdQuery</code>
+- Command: <code>UpdateMetaProgressoCommand</code></p>
+<hr />
+<h3 id="sw-072-edicao-e-exclusao-de-metas">SW-072: Edição e Exclusão de Metas</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> COULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero editar e excluir metas para ajustar meus objetivos conforme necessário.</p>
+<p><strong>Implementação:</strong>
+- Endpoints: <code>PUT /api/metas/{id}</code>, <code>DELETE /api/metas/{id}</code>
+- Commands: <code>UpdateMetaCommand</code>, <code>DeleteMetaCommand</code></p>
+<hr />
+<h3 id="sw-073-estatisticas-de-metas">SW-073: Estatísticas de Metas</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> COULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como um usuário autenticado, quero ver estatísticas gerais das minhas metas para ter visão consolidada dos meus objetivos.</p>
+<p><strong>Implementação:</strong>
+- Endpoints: <code>GET /api/metas/estatisticas</code>, <code>GET /api/metas/vencidas</code>, <code>GET /api/metas/alcancadas</code>
+- Queries: <code>GetMetasEstatisticasQuery</code>, <code>GetMetasVencidasQuery</code>, <code>GetMetasAlcancadasQuery</code></p>
+<hr />
+<h2 id="epic-8-infraestrutura-e-qualidade">Epic 8: Infraestrutura e Qualidade</h2>
+<h3 id="sw-080-clean-architecture">SW-080: Clean Architecture</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 21</p>
+<p><strong>História:</strong> Como desenvolvedor, quero implementar Clean Architecture para ter código organizado e manutenível.</p>
+<hr />
+<h3 id="sw-081-cqrs-com-mediatr">SW-081: CQRS com MediatR</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 13</p>
+<p><strong>História:</strong> Como desenvolvedor, quero implementar CQRS com MediatR para separar comandos de consultas.</p>
+<hr />
+<h3 id="sw-082-entity-framework-core">SW-082: Entity Framework Core</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 13</p>
+<p><strong>História:</strong> Como desenvolvedor, quero usar Entity Framework Core para persistência de dados.</p>
+<hr />
+<h3 id="sw-083-repository-pattern">SW-083: Repository Pattern</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como desenvolvedor, quero implementar Repository Pattern para abstrair acesso a dados.</p>
+<hr />
+<h3 id="sw-084-autenticacao-jwt">SW-084: Autenticação JWT</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como desenvolvedor, quero implementar autenticação JWT para proteger endpoints.</p>
+<hr />
+<h3 id="sw-085-validacoes-com-fluentvalidation">SW-085: Validações com FluentValidation</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> MUST HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como desenvolvedor, quero usar FluentValidation para validar dados de entrada.</p>
+<hr />
+<h3 id="sw-086-logging-com-serilog">SW-086: Logging com Serilog</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como desenvolvedor, quero implementar logging estruturado para rastrear operações.</p>
+<hr />
+<h3 id="sw-087-health-checks">SW-087: Health Checks</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como DevOps, quero health checks para monitorar saúde da aplicação.</p>
+<hr />
+<h3 id="sw-088-docker-e-docker-compose">SW-088: Docker e Docker Compose</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como DevOps, quero containerizar a aplicação para facilitar deploy.</p>
+<hr />
+<h3 id="sw-089-servico-de-email">SW-089: Serviço de Email</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 8</p>
+<p><strong>História:</strong> Como desenvolvedor, quero serviço de email para enviar notificações.</p>
+<hr />
+<h3 id="sw-090-testes-unitarios">SW-090: Testes Unitários</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 21</p>
+<p><strong>História:</strong> Como desenvolvedor, quero testes unitários para garantir qualidade do código.</p>
+<hr />
+<h3 id="sw-091-documentacao-da-api">SW-091: Documentação da API</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> SHOULD HAVE | <strong>Pontos:</strong> 5</p>
+<p><strong>História:</strong> Como desenvolvedor frontend, quero documentação da API para integrar corretamente.</p>
+<hr />
+<h3 id="sw-092-cicd-com-github-actions">SW-092: CI/CD com GitHub Actions</h3>
+<p><strong>Status:</strong> DONE | <strong>Prioridade:</strong> COULD HAVE | <strong>Pontos:</strong> 13</p>
+<p><strong>História:</strong> Como DevOps, quero pipeline CI/CD para automatizar build e testes.</p>
+<hr />
+<h2 id="tecnologias-utilizadas">Tecnologias Utilizadas</h2>
+<p><strong>Backend:</strong>
+- ASP.NET Core 9.0
+- Entity Framework Core
+- PostgreSQL
+- MediatR
+- FluentValidation
+- AutoMapper
+- Serilog
+- JWT Authentication</p>
+<p><strong>DevOps:</strong>
+- Docker
+- Docker Compose
+- GitHub Actions</p>
+<p><strong>Testes:</strong>
+- xUnit
+- Moq
+- FluentAssertions</p>
+<h2 id="padroes-implementados">Padrões Implementados</h2>
+<ul>
+<li>Clean Architecture</li>
+<li>CQRS (Command Query Responsibility Segregation)</li>
+<li>Repository Pattern</li>
+<li>Unit of Work</li>
+<li>Domain-Driven Design (DDD)</li>
+<li>Value Objects</li>
+<li>Rich Domain Model</li>
+<li>Dependency Injection</li>
+<li>Pipeline Behaviors</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.instant", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
